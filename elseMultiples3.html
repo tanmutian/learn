@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>王者荣耀英雄分类</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+	    function test(){
+		    var lifeValue=4000;
+			var attackValue=2500
+			if(lifeValue>=3000&&attackValue<500){
+			    console.log("坦克");
+			}else if((lifeValue<3000&&lifeValue>=1000)&&(attackValue>=500&&attackValue<1500)){
+			    console.log("辅助");
+			}else if((lifeValue<1000&&lifeValue>=800)&&(attackValue>=1500&&attackValue<2000)){
+			    console.log("刺客");
+			}else if((lifeValue<800&&lifeValue>=500)&&(attackValue>=2000&&attackValue<3000)){
+			    console.log("adc");
+			}else{
+			    console.log("待定");
+			}
+		}
+	</script>
+</head>
+
+<body onload="test()">
+	<div style="float:left;width:500px;height:500px;color:red;font-size:20px;font-weight:bold;font-family:SimSun;background:yellow;line-height:500px;text-align:center;" >
+    王者荣耀英雄分类
+	给出一个英雄的生命值（lifeValue），给出一个英雄的攻击值（attackValue）
+	如果生命值大于3000并且攻击值小于500，输出坦克型英雄
+	如果生命值在1000到3000之间并且攻击值在500到1500之间，输出辅助型英雄
+	如果生命值在800到1000之间并且攻击值在1500到2000之间，输出刺客型英雄
+	如果生命值在500到800之间并且攻击值在2000到3000之间，输出adc型英雄
+	否则输出待定
+	1000<lifeValue<3000
+	1000<lifeValue&&lifeValue<3000
+</body>
+</html>

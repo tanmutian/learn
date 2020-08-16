@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+		    var numberArray=[189,-99,33,8,21,56,213,215,85.3995,192,-2499,204.4,0.23,-586,722];
+			findTheBiggestOne(numberArray);
+		}
+		function findTheBiggestOne(numberArray){
+			theBiggestOne=numberArray[0];
+			for(i=1;i<numberArray.length;i++){
+				if(numberArray[i]>theBiggestOne){
+					theBiggestOne=numberArray[i];					
+				}else{
+					
+				}
+			}
+			console.log(theBiggestOne);
+		}
+
+	</script>
+</head>
+<body onload="main()">
+	找到数组当中的最大值,要用到for循环，if，全局值theBiggestOne
+	思路：
+	（1）先把数组当中的第一个值赋值给theBiggestOne
+	（2）从数组的第二个值开始依次判断：
+	     （2.1）如果数组的这个值大于theBiggestOne，那么把数组的这个值赋值给theBiggestOne
+		 （2.2）否则，如果数组的这个值小于等于theBiggestOne，那么theBiggestOne还用原来的本身的值。
+
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

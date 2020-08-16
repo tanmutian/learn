@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+		    var numberArray=[0,0,0,1,2,3,54,54,54,54,54,54,54,54,89];
+			findTheBiggestOneAndCount(numberArray);
+		}
+		function findTheBiggestOneAndCount(numberArray){
+			theBiggestOne=numberArray[0];
+			for(i=1;i<numberArray.length;i++){
+				if(numberArray[i]>theBiggestOne){
+					theBiggestOne=numberArray[i];
+				}
+			}
+			console.log("最大值为"+theBiggestOne);
+			countTheBiggestOnes=[];
+			for(i=0;i<numberArray.length;i++){
+				if(numberArray[i]==theBiggestOne){
+					countTheBiggestOnes.push(numberArray[i]);
+				}
+			}
+			console.log("有"+countTheBiggestOnes.length+"个");
+		}
+
+	</script>
+</head>
+<body onload="main()">
+	找到数组当中的最大值，并且输出这个最大值在数组中有几个
+	例子：
+	var numberArray=[1,2,3,4,4,4,4,4];
+	请输出：
+	数组中最大值是4
+	最大值有5个
+
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

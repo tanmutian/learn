@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>还是恶化</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+	    function test(){	
+            var myBattle1={
+			    myHero:'孙悟空',
+				myKda:'10-3-5',
+				myPower:209831,
+				victory:true
+			}
+			
+			var myBattle2={
+			    myHero:'露娜',
+				myKda:'8-5-2',
+				myPower:93045,
+				victory:false
+			}
+			
+			var myBattle3={
+			    myHero:'橘右京',
+				myKda:'8-2-7',
+				myPower:102390,
+				victory:true
+			}
+			
+			var myBattle4={
+			    myHero:'干将莫邪',
+				myKda:'3-6-7',
+				myPower:90991,
+				victory:false
+			}
+			
+			var myBattle5={
+			    myHero:'花木兰',
+				myKda:'8-5-9',
+				myPower:192837,
+				victory:true
+			}
+			
+			var myBattle=[myBattle1,myBattle2,myBattle3,myBattle4,myBattle5];
+			
+			for(var item=0;item<myBattle.length;item=item+1){
+			    if(myBattle[item].victory===true){
+				    console.log('我使用了'+myBattle[item].myHero+'，kda是'+myBattle[item].myKda+'，团战输出是'+myBattle[item].myPower+'，这场比赛胜利');
+				}else{
+				    console.log('我使用了'+myBattle[item].myHero+'，kda是'+myBattle[item].myKda+'，团战输出是'+myBattle[item].myPower+'，这场比赛失败');
+				}
+			
+			}
+			
+		}
+	</script>
+</head>
+<body onload="test()">
+	<div style="float:left;width:500px;height:500px;color:red;font-size:20px;font-weight:bold;font-family:SimSun;background:yellow;line-height:500px;text-align:center;" >
+	    定义一个对象数组，里面包括你最近5场比赛，每场比赛当做一个对象，里面包括：
+		1、你使用的英雄，名字字符串
+		2、你的kda，10-1-6字符串
+		3、你的团战输出，60000数字
+		4、你的胜利还是失败情况，true，false。bool值
+		
+		按照顺利输出，“我使用了”英雄“，kda是”kda“，团战输出是”团战输出值“，该场”胜利失败情况。
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

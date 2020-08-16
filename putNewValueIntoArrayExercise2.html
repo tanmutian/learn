@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var passArray=[1,56,3,343,5,9998,7];
+			var newArray=findTheNewArray(passArray);
+			console.log(newArray);
+		}
+		
+		function findTheNewArray(passArray){
+			var theBiggerOne
+			for(i=0;i<passArray.length;i++){
+				if(passArray[i]>passArray[i+1]){
+					theBiggerOne=passArray[i]
+					passArray[i]=passArray[i+1]
+					passArray[i+1]=theBiggerOne
+				}else{
+				}
+			}
+			return passArray
+		}
+
+	</script>
+</head>
+<body onload="main()">
+新建一个文件putNewValueIntoArrayExercise2
+定义一个数组，数组中的值全是整数，将这个数组传入子方法，在子方法中处理该数组并返回该数组
+子方法处理：从前到后交换数组中的相邻两项，将这两项中的大值放在后面，小值放在前面
+比如    [1,56,3,343,5,9998,7]
+处理成  [1,3,56,5,343,7,9998]
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var virusNumber={
+				shangHaiTotal:304,
+				shangHaiNew:6,
+				liaoNingTotal:109,
+				liaoNingNew:4,
+				zheJiangTotal:1093,
+				zheJiangNew:13
+			}
+			calculateCountryVirusNumber(virusNumber);
+
+		}
+		function calculateCountryVirusNumber(virusNumber){
+			console.log(virusNumber);
+			
+			var totalNumber=virusNumber.shangHaiTotal+virusNumber.liaoNingTotal+virusNumber.zheJiangTotal;
+			console.log("全国目前总感染数"+totalNumber);
+			
+			var newNumber=virusNumber.shangHaiNew+virusNumber.liaoNingNew+virusNumber.zheJiangNew;
+			console.log("全国今日新增感染数"+newNumber);
+		}
+
+	</script>
+</head>
+<body onload="main()">
+	方法传递参数，也可以传递对象，即object
+
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

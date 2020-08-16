@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var theConsumer={
+				name:"张三",
+				vip:false,
+				sex:"male",
+				product:"剃须刀",
+				number:2,
+				price:120,
+				location:"湖南",
+				coupon:40
+			}
+			theFinalAnswer=answer(theConsumer);
+			console.log(theFinalAnswer);
+		}
+		function answer(theConsumer){
+			var theAnswer;
+			var theSex;
+			var theTransportationCost;
+			var theCostAfterSale=theConsumer.price*theConsumer.number*0.7
+			var theTotalCost;
+			var theTotalCostAftetSale;
+			if(theConsumer.location=="浙江"||theConsumer.location=="江苏"||theConsumer.location=="上海"){
+				theTransportationCost=0
+			}else if(theConsumer.location=="湖南"||theConsumer.location=="湖北"||theConsumer.location=="江西"){
+				theTransportationCost=10
+			}else{
+				theTransportationCost=15
+			}
+			if(theConsumer.coupon<theConsumer.price*theConsumer.number+theTransportationCost){
+				theTotalCost=theConsumer.price*theConsumer.number+theTransportationCost-theConsumer.coupon
+			}else{
+				theTotalCost=0
+			}
+			if(theConsumer.coupon<theCostAfterSale+theTransportationCost){
+				theTotalCostAftetSale=theCostAfterSale+theTransportationCost-theConsumer.coupon
+			}else{
+				theTotalCostAftetSale=0
+			}
+			if(theConsumer.sex=="male"){
+				theSex="先生"
+			}else{
+				theSex="女士"
+			}
+			if(theConsumer.vip){
+				theAnswer="尊敬的"+theConsumer.name+theSex+"，您购买了"+theConsumer.number+"件"+theConsumer.product+"，每件"+theConsumer.price+"元。因为您是VIP用户，该商品打7折，商品价格为"+theCostAfterSale+"元，因为您在"+theConsumer.location+"，运费为"+theTransportationCost+"元，您有抵用券"+theConsumer.coupon+"元，实付"+theTotalCostAftetSale+"元";
+			}else{
+				theAnswer="尊敬的"+theConsumer.name+theSex+"，您购买了"+theConsumer.number+"件"+theConsumer.product+"，每件"+theConsumer.price+"元。因为您不是VIP用户，该商品不打折，商品价格为"+theConsumer.price*theConsumer.number+"元，因为您在"+theConsumer.location+"，运费为"+theTransportationCost+"元，您有抵用券"+theConsumer.coupon+"元，实付"+theTotalCost+"元";
+			}
+			return theAnswer
+		}
+	</script>
+</head>
+<body onload="main()">
+新建文件functionReturnValueOfStringExercise
+购物结算系统
+定义一个对象，这个对象包括
+购物者姓名     张三
+是否是vip       true
+性别            male
+买的东西        剃须刀
+该东西数量      1
+该东西价格      100
+
+
+收货地址对应运费（浙江，江苏，上海运费为0。湖南省，湖北省，江西省运费为10元。剩下的运费为15元）   辽宁
+抵用券                                                                                                90
+
+将这个对象传入计算子方法中
+经过计算输出：尊敬的***先生（女士），您购买了*件*商品，每件*元。
+
+因为您是VIP用户，该商品打7折，商品价格*元，因为您在*省，运费为*元，您有抵用券*元，实付*元
+因为您不是VIP用户，该商品不打折，商品价格*元，因为您在*省，运费为*元，您有抵用券*元，实付*元
+
+
+
+
+将上面的这句话，在主方法内输出
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

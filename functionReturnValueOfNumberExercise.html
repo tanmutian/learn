@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var calculator={
+				number1:6,
+				number2:2,
+				symbol:"*"
+			}
+			var finalAnswer=calculate(calculator);
+			console.log(finalAnswer);
+		}
+		function calculate(calculator){
+			var finalAnswer;
+			if(calculator.symbol=="+"){
+				finalAnswer=calculator.number1+calculator.number2;
+			}else if(calculator.symbol=="-1"){
+				finalAnswer=calculator.number1-calculator.number2;
+			}else if(calculator.symbol=="-2"){
+				finalAnswer=calculator.number2-calculator.number1;
+			}else if(calculator.symbol=="*"){
+				finalAnswer=calculator.number1*calculator.number2;
+			}else if(calculator.symbol=="/1"){
+				finalAnswer=calculator.number1/calculator.number2;
+			}else if(calculator.symbol=="/2"){
+				finalAnswer=calculator.number2/calculator.number1;
+			}else if(calculator.symbol=="^"){
+				finalAnswer=calculator.number1*calculator.number1+calculator.number2*calculator.number2;
+			}else if(calculator.symbol=="#"){
+				finalAnswer=calculator.number1*calculator.number1*calculator.number1-calculator.number2*calculator.number2*calculator.number2;
+			}else if(calculator.symbol=="%"){
+				finalAnswer=calculator.number1%calculator.number2;
+			}else if(calculator.symbol=="&"){
+				finalAnswer=calculator.number1*2+calculator.number2*2;
+			}else{
+				console.log("不在计算范围内。");
+			}
+			return finalAnswer
+		}
+
+	</script>
+</head>
+<body onload="main()">
+新建functionReturnValueOfNumberExercise
+二元计算器
+从主方法向子方法传递三个参数，第一个参数是数字，第二个参数是运算符，第三个参数是数字
+如果运算符：
+是+，两数做加法
+是-1，左侧减右侧做减法
+是-2，右侧减左侧做减法
+是*，两数做乘法
+是/1，左侧除以右侧做除法
+是/2，右侧除以左侧做除法
+是^,做两数的平方和
+是#,做两数的立方差（左侧减右侧）
+
+自己在随意定义两种运算
+
+计算好之后返回结果给主方法，并在主方法内输出结果
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

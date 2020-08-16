@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var priceAndNumber={
+				priceOfFish:50,
+				numberOfFish:2,
+				priceOfSpareribs:80,
+				numberOfSpareribs:2,
+				priceOfMushroom:40,
+				numberOfMushroom:2,
+				priceOfJuice:10,
+				numberOfJuice:1,
+				VIP:false
+			}
+			calculateTotalPrice(priceAndNumber);
+		}
+		function calculateTotalPrice(priceAndNumber){
+			var totalSpendingOnFish=priceAndNumber.priceOfFish*priceAndNumber.numberOfFish;
+			
+			var totalSpendingOnSpareribs=priceAndNumber.priceOfSpareribs*priceAndNumber.numberOfSpareribs;
+			
+			var totalSpendingOnMushroom=priceAndNumber.priceOfMushroom*priceAndNumber.numberOfMushroom;
+			
+			var totalSpendingOnJuice=priceAndNumber.priceOfJuice*priceAndNumber.numberOfJuice;
+			
+			var totalSpending=totalSpendingOnFish+totalSpendingOnSpareribs+totalSpendingOnMushroom+totalSpendingOnJuice;
+			
+			console.log(totalSpending);
+			
+			if(priceAndNumber.VIP==true){
+				if(totalSpending>1000){
+					console.log(totalSpending*0.7);
+				}else{
+					console.log(totalSpending*0.9);
+				}
+			}else{
+				if(totalSpending>3000){
+					console.log(totalSpending*0.8);
+				}else{
+					console.log(totalSpending);
+				}
+			}
+		}
+
+	</script>
+</head>
+<body onload="main()">
+	春节商场购物结算软件
+（1）定义一个对象，里面包括：
+	鱼的价格，数字类型
+	鱼的条数，数字类型
+	
+	排骨价格，数字类型
+	排骨斤数，数字类型
+	
+	蘑菇价格，数字类型
+	蘑菇斤数，数字类型
+	
+	饮料价格，数字类型
+	饮料瓶数，数字价格
+	
+	会员，bool类型
+（2）写出一个计算方法，计算买的这个对象价格
+    如果是会员，价格超过1000元，打7折。否则打9折
+	如果不是会员，价格超过3000元，打8折。否则不打折
+	
+	输出要付多少钱
+	
+	
+	
+
+</body> 
+</html>

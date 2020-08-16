@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var theConsumer={
+				name:"Lisa",
+				vip:true,
+				sex:"male",
+				product:"戒指",
+				number:2,
+				price:300
+			}
+			var theFinalAnswer=answer(theConsumer);
+			console.log(theFinalAnswer);
+		}
+		function answer(theConsumer){
+			var theFinalAnswer;
+			var theSexOfConsumer;
+			if(theConsumer.sex=="male"){
+				theSexOfConsumer="先生"
+			}else{
+				theSexOfConsumer="女士"
+			}
+			if(theConsumer.vip){
+				theFinalAnswer="尊敬的"+theConsumer.name+theSexOfConsumer+"，您购买了"+theConsumer.number+"件"+theConsumer.product+"，每件"+theConsumer.price+"元。因为您是VIP用户，该商品打7折，支付"+theConsumer.price*0.7*theConsumer.number+"元。"
+			}else{
+				theFinalAnswer="尊敬的"+theConsumer.name+theSexOfConsumer+"，您购买了"+theConsumer.number+"件"+theConsumer.product+"，每件"+theConsumer.price+"元。因为您不是VIP用户，该商品不打折，支付"+theConsumer.price*theConsumer.number+"元。"
+			}
+			return theFinalAnswer
+		}
+	</script>
+</head>
+<body onload="main()">
+新建文件functionReturnValueOfStringExercise
+购物结算系统
+定义一个对象，这个对象包括
+购物者姓名
+是否是vip
+性别
+买的东西
+该东西数量
+该东西价格
+
+将这个对象传入计算子方法中
+经过计算输出：尊敬的***先生（女士），您购买了*件*商品，每件*元。因为您是VIP用户，该商品打7折，支付*元。（因为您不是VIP用户，该商品不打折，支付*元。）
+
+将上面的这句话，在主方法内输出
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

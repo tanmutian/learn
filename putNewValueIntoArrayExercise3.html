@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+		    var passArray=[3,56,23,78,2,3623,122,22,1.2,0,78543,0];
+			newArray=findTheNewArray(passArray);
+			console.log(newArray);
+		}
+		
+		function findTheNewArray(passArray){
+			var theBiggerOne
+			for(x=passArray.length;x>0;x=x-1){     
+				for(i=0;i<x;i++){    
+					if(passArray[i]>passArray[i+1]){
+						theBiggerOne=passArray[i]
+						passArray[i]=passArray[i+1]
+						passArray[i+1]=theBiggerOne
+					}
+				
+				}
+			}
+
+			
+			return passArray
+		}
+
+	</script>
+</head>
+<body onload="main()">
+新建一个文件putNewValueIntoArrayExercise3
+定义一个数组，数组中的值全是整数，将这个数组传入子方法，在子方法中处理该数组并返回该数组
+子方法处理:将这个数组进行从小到大的排序
+示例数组[3,56,23,78,2,7876,323]
+输出数组[2,3,23,56,78,323,7876]
+提示：(1)要用到两个for(2)一个for嵌套另一个for(3)第二个for写在已经写好这个for的外层
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

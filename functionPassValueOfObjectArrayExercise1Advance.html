@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var scoreOfStudents=[{
+				name:"Victor",
+				chinese:99,
+				math:98,
+				eglish:99,
+				physics:99,
+				chemistry:89,
+				biology:89
+			},{
+				name:"Tony",
+				chinese:85,
+				math:97,
+				eglish:95,
+				physics:97,
+				chemistry:93,
+				biology:87
+			},{
+				name:"Eric",
+				chinese:75,
+				math:94,
+				eglish:88,
+				physics:99,
+				chemistry:83,
+				biology:82
+			}{
+				name:"Keiven",
+				chinese:99,
+				math:99,
+				eglish:99,
+				physics:99,
+				chemistry:99,
+				biology:99
+			},{
+				name:"Royce",
+				chinese:72,
+				math:74,
+				eglish:87,
+				physics:75,
+				chemistry:60,
+				biology:70
+			}];
+			putStudentIntoDifferentClass(scoreOfStudents);
+			
+		}
+		function putStudentIntoDifferentClass(scoreOfStudents){
+			var experienceClass=[];
+			var normalClass=[];
+			
+			for(i=0;i<scoreOfStudents.length;i++){
+				var chineseCondition=scoreOfStudents[i].chinese>80;
+				
+				var mathCondition=scoreOfStudents[i].math>95;
+				
+				var eglishCondition=scoreOfStudents[i].eglish>90;
+				
+				var physicsCondition=scoreOfStudents[i].physics>85;
+				
+				var chemistryCondition=scoreOfStudents[i].chemistry>85;
+				
+				var biologyCondition=scoreOfStudents[i].biology>85;
+				
+				var result=chineseCondition&&mathCondition&&eglishCondition&&physicsCondition&&chemistryCondition&&biologyCondition;
+				
+				console.log(scoreOfStudents[i].name+"是"+result);
+				
+				if(chineseCondition&&mathCondition&&eglishCondition&&physicsCondition&&chemistryCondition&&biologyCondition){
+                    experienceClass.push(scoreOfStudents[i].name);
+				}else{
+					normalClass.push(scoreOfStudents[i].name);
+				}
+			}
+			console.log(experienceClass);
+			console.log(normalClass);
+		}
+	</script>
+</head>
+<body onload="main()">
+进行实验班和平行班的选拔：
+有一个对象数组，代表这届学生的学习情况
+这个数组中学生情况，使用对象进行描述
+对象里面包括：学生姓名，语文成绩，数学成绩，英语成绩，物理成绩，化学成绩，生物成绩，全是100分制
+选拔条件：如果这个学生，语文超过80，数学超过95，英语超过90，物理超过85，化学超过85，生物超过85，符合这样的条件的学生入选实验班，只要有一项不符合就分到平行班。
+
+请自定义学生，输出实验班名单，平行班名单。
+
+提示：平行条件可以用&&而不用if
+var chineseCondition=scoreOfStudents[i].chinese>80;
+
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

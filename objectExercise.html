@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>11111</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+	    function test1111(){
+	        var myHero={
+			name:"Hou Yi",
+			skillName1:"多重箭矢",
+			skillName2:"落日余晖",
+			skillName3:"灼日之矢",
+			skill1Power:400,
+			skill2Power:550,
+			skill3Power:1050
+			//对线注意：开二技能，清完兵线后边打河蟹边压制，注意自保。
+			}
+			
+			var myBestHero={
+			name:"花木兰",
+			skillName1:"空裂斩",
+			skillName2:"旋舞之华",
+			skillName3:"绽放刀锋",
+			skill1Power:260,
+			skill2Power:640,
+			skill3Power:300
+			//对线注意：开二技能，以最低承受伤害清线，四级配合打野抓人，可刺客可前排。
+			
+			}
+			console.log("一技能伤害差");
+			console.log(myHero.skill1Power-myBestHero.skill1Power);
+			console.log("二技能伤害差");
+			console.log(myHero.skill2Power-myBestHero.skill2Power);
+			console.log("三技能伤害差");
+			console.log(myHero.skill3Power-myBestHero.skill3Power);
+			
+			var totalPower1=myHero.skill1Power+myHero.skill2Power+myHero.skill3Power;
+			var totalPower2=myBestHero.skill1Power+myBestHero.skill2Power+myBestHero.skill3Power;
+			console.log("总伤害差");
+			console.log(totalPower1-totalPower2);
+			
+		}
+	</script>
+</head>
+
+<body onload="test1111()">
+<div style="float:left;width:284px;height:160px;" >
+（1）请描述王者荣耀中后羿的信息，包括：
+名字
+技能名字
+技能对应的伤害
+对线时候的注意remark，例子"英雄伤害较高但是防御较差"
+自由发挥：其他的你能想到的字段。
+
+请输出他单次各个技能伤害总和。
+
+（2）
+在（1）基础上，在列出一个你擅长的英雄，并列出：
+名字
+技能名字
+技能对应的伤害
+对线时候的注意remark，例子"英雄伤害较高但是防御较差"
+自由发挥：其他的你能想到的字段。
+
+请输出他单次各个技能伤害总和。
+比较两个英雄相同技能的伤害差
+比较两个英雄所有单次伤害差
+</div>  
+
+
+
+
+</body>
+
+
+</html>

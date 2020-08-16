@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var theSituationOfTheGame={
+				enemyTank:"中级",
+				attackOfEnemyArcher:5000,
+				selfSpeed:"中级",
+				selfAttack:4000,
+				selfHealth:6000,
+				selfEconomic:17800,
+				enemyEconomic:16000
+			}
+			theAnswer=suggessions(theSituationOfTheGame);
+			console.log(theAnswer);
+		}
+		function suggessions(theSituationOfTheGame){
+			var equipmentForTank;
+			var equipmentForArcher;
+			var equipmentForSelfSpeed;
+			var equipmentForSelfAttack;
+			var equipmentForSelfHealth;
+			var equipmentForEconomic;
+			var theDifferenceBetweenEconomic=theSituationOfTheGame.selfEconomic-theSituationOfTheGame.enemyEconomic;
+			if(theSituationOfTheGame.enemyTank=="中级"||theSituationOfTheGame.enemyTank=="初级"){
+				equipmentForTank="暗影战斧"
+			}else{
+				equipmentForTank="暗影战斧和碎星锤"
+			}
+			if(theSituationOfTheGame.attackOfEnemyArcher<=8000){
+				equipmentForArcher="不祥征兆"
+			}else{
+				equipmentForArcher="不祥征兆和反伤刺甲"
+			}
+			if(theSituationOfTheGame.selfSpeed=="初级"||theSituationOfTheGame.selfSpeed=="中级"){
+				equipmentForSelfSpeed="名刀司命"
+			}else{
+				equipmentForSelfSpeed="破军"
+			}
+			if(theSituationOfTheGame.selfAttack<=8000){
+				equipmentForSelfAttack="破军或碎星锤"
+			}else{
+				equipmentForSelfAttack="反伤刺甲或名刀司命"
+			}
+			if(theSituationOfTheGame.selfHealth<=8000){
+				equipmentForSelfHealth="反伤刺甲或名刀司命"
+			}else{
+				equipmentForSelfHealth="名刀司命"
+			}
+			if(theDifferenceBetweenEconomic>1000){
+				equipmentForEconomic="破军或碎星锤"
+			}else{
+				equipmentForEconomic="名刀司命或血魔之怒"
+			}
+			var suggessions="您现在使用的是花木兰，对面坦克坦度为"+theSituationOfTheGame.enemyTank+"，对应出装"+equipmentForTank+"。对面射手攻击值为"+theSituationOfTheGame.attackOfEnemyArcher+"，对应出装"+equipmentForArcher+"自己本局的速度为"+theSituationOfTheGame.selfSpeed+"，对应出装"+equipmentForSelfSpeed+"。自己的攻击值为"+theSituationOfTheGame.selfAttack+"，对应出装"+equipmentForSelfAttack+"。自己血量值为"+theSituationOfTheGame.selfHealth+"，对应出装"+equipmentForSelfHealth+"。双方团队经济差为"+theDifferenceBetweenEconomic+"，对应出装"+equipmentForEconomic;
+			
+			return suggessions
+		}
+
+	</script>
+</head>
+<body onload="main()">
+新建文件functionReturnValueOfStringExercise3
+
+子方法进行判断
+定义一个对象，当前局势
+对面坦克，坦度高级，中级，初级
+对面射手，攻击值3000以下初级，3000到8000中级，8000以上是高级
+自己速度，高级，中级，初级
+自己的攻击值，攻击值3000以下初级，3000到8000中级，8000以上是高级
+自己血量值，5000以下初级，5000到9000中级，9000以上是高级
+控制面板我方经济总量
+控制面板对方经济总量
+
+在主方法内进行输出：
+您使用的是花木兰，对面坦克*级，对应出装*。对面射手攻击值*，对应出装*。自己要求速度*级，对应出装*。自己的攻击值*，对应出装*。自己血量值*，对应出装*。双方团队经济差*，对应出装*。
+
+js,html,css
+java
+c,c++
+
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
