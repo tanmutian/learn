@@ -12,6 +12,14 @@
 		function main(){
 			var theSentence="my second console";
 			console.log(theSentence);
+			var theArray=[213,212,252,353,211,22.3,1255,12];
+			var theBiggerOne=theArray[0];
+			for(i=1;i<theArray.length;i++){
+				if(theArray[i]>theBiggerOne){
+					theBiggerOne=theArray[i]
+				}
+			}
+			console.log(theBiggerOne);
 		}
 	
 
