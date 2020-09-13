@@ -10,12 +10,13 @@
 	</style>
 	<script type="text/javascript">
 		function main(){
-			var timeOfRepeat=5;
-			for(i=1;i<timeOfRepeat;i++){
+			var timeOfRepeat=15;
+			for(i=1;i<=timeOfRepeat;i++){
 				var numberPicture=[];
-				for(x=i;x>0;x=x-1){
-					
+				for(x=1;x<=i;x++){
+					numberPicture.push(x);
 				}
+				console.log(numberPicture);
 			}
 		}
 	
