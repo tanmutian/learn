@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			theMedalOfEachCountry=[{
+				country:"England",
+				goldMedal:1222,
+				silverMedal:10,
+				copperMedal:10
+			},{
+				country:"America",
+				goldMedal:115,
+				silverMedal:15,
+				copperMedal:15
+			},{
+				country:"Brazil",
+				goldMedal:10,
+				silverMedal:12,
+				copperMedal:10
+			},{
+				country:"Argentina",
+				goldMedal:15,
+				silverMedal:10,
+				copperMedal:10
+			}];
+			var theFinalChampion=findTheFinalRanking(theMedalOfEachCountry);
+			console.log(theFinalChampion.country);
+		}	
+		
+		function findTheFinalRanking(theMedalOfEachCountry){
+			var theNewArray=[];
+			for(var i=0;i<theMedalOfEachCountry.length;i++){
+				theMedalOfEachCountry[i].totalMedals=theMedalOfEachCountry[i].goldMedal+theMedalOfEachCountry[i].silverMedal+theMedalOfEachCountry[i].copperMedal;
+				theMedalOfEachCountry[i].weightOfMedals=theMedalOfEachCountry[i].goldMedal*1+theMedalOfEachCountry[i].silverMedal*0.7+theMedalOfEachCountry[i].copperMedal*0.4;
+				theNewArray.push[theMedalOfEachCountry];
+			}
+			var theHigherObject=theMedalOfEachCountry[0];
+			for(var x=1;x<theMedalOfEachCountry.length;x++){
+				if(theMedalOfEachCountry[x].weightOfMedals>theHigherObject.weightOfMedals){
+					theHigherObject=theMedalOfEachCountry[x];
+				}
+			}
+			return theHigherObject;
+		}
+	
+	</script>
+</head>
+<body onload="main()">
+新建functionReturnValueOfObjectArrayExercise2文件，主方法有有一个对象数组，对象代表奥运会中国家以及国家的奖牌数（金牌，银牌，铜牌），数组中对象数不定。将这个对象数组传入子方法中，在子方法中进行处理：
+（1）给每一个国家算出奖牌总数
+（2）给每一个国家算出奖牌权重=金牌数*1+银牌数*0.7+铜牌数*0.4
+（3）请根据奖牌权重对国家在这次奥运会中的表现找出第一名
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
