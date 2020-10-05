@@ -36,11 +36,9 @@
 		}	
 		
 		function findTheFinalRanking(theMedalOfEachCountry){
-			var theNewArray=[];
 			for(var i=0;i<theMedalOfEachCountry.length;i++){
 				theMedalOfEachCountry[i].totalMedals=theMedalOfEachCountry[i].goldMedal+theMedalOfEachCountry[i].silverMedal+theMedalOfEachCountry[i].copperMedal;
 				theMedalOfEachCountry[i].weightOfMedals=theMedalOfEachCountry[i].goldMedal*1+theMedalOfEachCountry[i].silverMedal*0.7+theMedalOfEachCountry[i].copperMedal*0.4;
-				theNewArray.push[theMedalOfEachCountry];
 			}
 			var theHigherObject=theMedalOfEachCountry[0];
 			for(var x=1;x<theMedalOfEachCountry.length;x++){
