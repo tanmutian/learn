@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var numberArray=[8,7,6,225,35,2112,3,-122,3.52,4];
+			var value;
+			//for(var i=0;i<=numberArray.length-1;i++){
+			for(var i=numberArray.length-2;i>=0;i=i-1){
+				for(var x=0;x<=i;x++){
+					if(numberArray[x]>numberArray[x+1]){
+						value=numberArray[x];
+						numberArray[x]=numberArray[x+1];
+						numberArray[x+1]=value;
+					}
+				}
+			}
+			console.log(numberArray);
+		}
+	
+	</script>
+</head>
+<body onload="main()">
+新建一个文件sortExercise4在文件中有一个数组，数组里面全是数字，数组长度不定。从前向后对数组进行操作，每一次比较当前项与其后面一项，如果当前项比其后面一项大，交换这两项。如果当前项小于等于其后面一项，不变。
+终止项第一次为倒数第二项
+终止项第二次为倒数第三项
+终止项第三次为倒数第四项。。。
+终止向从倒数第二项逐次向前，直到终止向为第0项为止
+
+数组初始为：
+[34,23,67,23]
+
+经过第一次处理，即终止向为倒数第二项时，数组为：
+[23,34,23,67]
+
+
+经过第二次处理，即终止向为倒数第三项时，数组为：
+[23,23,34,67]
+
+经过第三次处理，即终止向为倒数第四项（即第一项）时，数组为：
+[23,23,34,67]
+终止
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

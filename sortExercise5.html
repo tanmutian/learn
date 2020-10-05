@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var theMedalsOfEachCountry=[{
+				country:"England",
+				goldMedal:12,
+				silverMedal:10,
+				copperMedal:11
+			},{
+				country:"America",
+				goldMedal:15,
+				silverMedal:12,
+				copperMedal:3
+			},{
+				country:"Brazil",
+				goldMedal:14,
+				silverMedal:12,
+				copperMedal:6
+			},{
+				country:"India",
+				goldMedal:10,
+				silverMedal:11,
+				copperMedal:8
+			}];
+			theFinalRanking=findTheRanking(theMedalsOfEachCountry);
+			console.log(theFinalRanking);
+		}
+		
+		function findTheRanking(theMedalsOfEachCountry){
+			var newArray=[]
+			for(var i=0;i<theMedalsOfEachCountry.length;i++){
+				theMedalsOfEachCountry[i].weightOfMedals=theMedalsOfEachCountry[i].goldMedal*1+theMedalsOfEachCountry[i].silverMedal*0.7+theMedalsOfEachCountry[i].copperMedal*0.4
+			}
+			
+			var value;
+			for(var x=theMedalsOfEachCountry.length;x>=0;x=x-1){
+				for(var y=0;y<=i;y++){
+					if(theMedalsOfEachCountry[y].weightOfMedals<theMedalsOfEachCountry[y+1].weightOfMedals){
+						value=theMedalsOfEachCountry[y];
+						theMedalsOfEachCountry[y]=theMedalsOfEachCountry[y+1];
+						theMedalsOfEachCountry[y+1]=value;
+					}
+					newArray.push(theMedalsOfEachCountry[y]);
+				}
+			}
+			return newArray
+		}
+	
+	</script>
+</head>
+<body onload="main()">
+新建一个文件sortExercise5，主方法有有一个对象数组，对象代表奥运会中国家以及国家的奖牌数（金牌，银牌，铜牌），数组中对象数不定。将这个对象数组传入子方法中，在子方法中进行处理：
+（1）给每一个国家算出奖牌权重=金牌数*1+银牌数*0.7+铜牌数*0.4
+（2）请根据奖牌权重对国家在这次奥运会中进行排名，权重从小到大
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
