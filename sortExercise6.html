@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			theClass=[{
+				name:"Eric",
+				sex:"male",
+				chinese:100,
+				math:98,
+				English:88
+			},{
+				name:"Kevin",
+				sex:"male",
+				chinese:100,
+				math:88,
+				English:100
+			},{
+				name:"Linda",
+				sex:"female",
+				chinese:70,
+				math:94,
+				English:95
+			},{
+				name:"Joyce",
+				sex:"female",
+				chinese:85,
+				math:86,
+				English:97
+			}];
+			theBestScore=findTheBestScore(theClass);
+			var theBestOfMale=[];
+			var theBestOfFemale=[];
+			for(var z=0;z<theClass.length;z++){
+				if(theClass[z].sex=="male"){
+					theBestOfMale.push(theClass[z]);
+				}else{
+					theBestOfFemale.push(theClass[z]);
+				}
+			}
+			//for(var z=0;z<theClass.length;z++){
+				//if(theClass[z].sex=="male"){
+				//		theBestOfMale=theClass[z];
+				//}else{
+				//		theBestOfFemale=theClass[z];
+				//}
+			//}
+			console.log("这个班级中男生最好平均成绩是"+theBestOfMale[0].name+"他的成绩是"+theBestOfMale[0].averageScore);
+			console.log("这个班级中女生最好平均成绩是"+theBestOfFemale[0].name+"她的成绩是"+theBestOfFemale[0].averageScore);
+		}
+		
+		function findTheBestScore(theClass){
+			var value;
+			for(var i=0;i<theClass.length;i++){
+				theClass[i].averageScore=(theClass[i].chinese+theClass[i].math+theClass[i].English)/3
+			}
+			for(var x=theClass.length-2;x>=0;x--){
+				for(var y=0;y<=x;y++){
+					if(theClass[y].averageScore<theClass[y+1].averageScore){
+						value=theClass[y];
+						theClass[y]=theClass[y+1];
+						theClass[y+1]=value;
+					}
+				}
+			}
+			return theClass;
+		}
+	
+	</script>
+</head>
+<body onload="main()">
+新建一个文件sortExercise6，主方法有有一个对象数组，对象代表班级学生的姓名，性别，语文成绩，数学成绩，英语成绩。在子方法中对这个对象数组进行处理：
+（1）计算出每个学生的各科平均成绩。
+（2）对平均成绩进行排序，从大到小
+返回排序后的对象数组给主方法。
+
+在主方法中对这个对象数组继续处理：
+（1）输出：这个班级中男生最好平均成绩是@@（人名），他的成绩是￥￥（成绩）
+（2）输出：这个班级中女生最好平均成绩是##（人名），她的成绩是￥￥（成绩）
+
+
+
+
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
