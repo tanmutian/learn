@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var number1=2522;
+			var number2=231;
+			var single1="+";
+			var single2="-";
+			var single3="*";
+			var single4="/";
+			var single5="@";
+			var single6="#";
+			var finalAnswer=calculator(number1,single2,number2);
+			console.log(finalAnswer);
+		}
+		function calculator(number1,single1,number2){
+			var theValue;
+			if(single1=="+"){
+				theValue=number1+number2
+			}else if(single1=="-"){
+				theValue=number1-number2
+			}else if(single1=="*"){
+				theValue=number1*number2
+			}else if(single1=="/"){
+				theValue=number1/number2
+			}else if(single1=="@"){
+				theValue=number1*number1+number2*number2
+			}else if(single1=="#"){
+				theValue=number1*number1*number1-number2*number2*number2
+			}
+			return theValue
+		}
+	
+	</script>
+</head>
+<body onload="main()">
+新建passMultiParamsToFunctionExercise1
+做一个二元计算器，在主方法中定义三个变量，第一个变量代表二元计算器的左边的数，第二个变量代表二元计算器的符号，第三个变量代表二元计算器的右边的数。
+将这三个变量传入子方法中，在子方法中进行计算，返回计算结果给主方法，在主方法中输出计算结果
+
+计算包括：
+加法  +
+减法  -
+乘法  *
+除法  /
+自定义符号：
+平方和 @
+立方差 !
+
+例子
+2 @ 3
+
+输出
+13 
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

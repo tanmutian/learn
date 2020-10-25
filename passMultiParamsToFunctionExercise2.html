@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var array1=[2,6,88,25,322,-5.3];
+			var array2=[3,5,90,105,232,-255];
+			var finalArray=findTheNewArray(array1,array2);
+			console.log(finalArray);
+		}
+		
+		function findTheNewArray(array1,array2){
+			var newArray=[];
+			var theValue;
+			for(var y=0;y<array1.length;y++){
+				newArray.push(array1[y]);
+			}
+			for(var z=0;z<array2.length;z++){
+				newArray.push(array2[z]);
+			}
+			for(var i=newArray.length-2;i>=0;i--){
+				for(var x=0;x<=i;x++){
+					if(newArray[x]>newArray[x+1]){
+						theValue=newArray[x];
+						newArray[x]=newArray[x+1];
+						newArray[x+1]=theValue;
+					}
+				}
+			}
+			return newArray;
+		}
+	
+	</script>
+</head>
+<body onload="main()">
+新建passMultiParamsToFunctionExercise2
+合并已经排好序的数组：
+在主方法中有两个已经从小到大排好序的数组，将这两个数组传入子方法中，在子方法中将这两个数组组合成一个从小到大排好序的数组，返回给主方法，在主方法中输出这个新数组
+
+例：
+数组a是  [2,6,88]
+数组b是  [3,5,90,105,214]
+
+输出
+[2,3,5,6,88,90,105,214]
+
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
