@@ -10,8 +10,19 @@
 	</style>
 	<script type="text/javascript">
 		function main(){
+			var value=100;
+			var answer=findTheAnswer(value);
+			console.log(answer);
 		}
-	
+		
+		function findTheAnswer(value){
+			var answer=0;
+			while(value>0){
+				answer=answer+value;
+				value=value-1;
+			}
+			return answer;
+		}
 	</script>
 </head>
 <body onload="main()">

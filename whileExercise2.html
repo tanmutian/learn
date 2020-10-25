@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var monthlyTest=[{
+				name:"keivn",
+				gender:"male",
+				cabre:false,
+				score:68
+			},{
+				name:"Jude",
+				gender:"female",
+				cabre:true,
+				score:65
+			},{
+				name:"Eric",
+				gender:"male",
+				cabre:true,
+				score:78
+			},{
+				name:"Joe",
+				gender:"male",
+				cabre:false,
+				score:63
+			}];
+			var answer=findTheAnswer(monthlyTest);
+			console.log("这个班级的学生中男生，不是班干部，且成绩及格（成绩大于60）的人数是"+answer);
+		}
+		
+		function findTheAnswer(monthlyTest){
+			var array=[];
+			var i=0;
+			var value;
+			while(i<monthlyTest.length&&monthlyTest[i].gender=="male"&&!monthlyTest[i].cabre&&monthlyTest[i].score>60){
+				array.push(monthlyTest[i]);
+				i=i+1;
+			}
+			value=array.length;
+			return value
+		}
+	</script>
+</head>
+<body onload="main()">
+新建一个文件whileExercise2
+在主方法中定义一个对象数组，这个数组中每一个对象都是一个学生月考成绩信息，包括：学生姓名，成绩，是否为班干部，性别。将这个数组传入子方法中，在子方法中进行处理：
+统计这个班级的学生中男生，不是班干部，且成绩及格（成绩大于60）的人数，将统计的人数返回给主方法，在主方法中输出：这个班级的学生中男生，不是班干部，且成绩及格（成绩大于60）的人数是***
+
+要求：必须用while
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
