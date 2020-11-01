@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var array1=[88,66,0];
+			var array2=[214,105,90,5,4];
+			var theFinalArray=findTheArray(array1,array2);
+			console.log(theFinalArray);
+		}
+	
+		function findTheArray(array1,array2){
+			var i=0;
+			var x=0;
+			var finalArray=[];
+			while(i<array1.length||x<array2.length){
+				if(array1[i]==undefined){
+					finalArray.push(array2[x]);
+					x=x+1;
+				}else if(array2[x]==undefined){
+					finalArray.push(array1[i]);
+					i=i+1;
+				}else if(array1[i]<array2[x]){
+					finalArray.push(array2[x]);
+					x=x+1;
+				}else{
+					finalArray.push(array1[i]);
+					i=i+1;
+				}
+			}
+			return finalArray
+		}
+	</script>
+</head>
+<body onload="main()">
+新建whileExercise4.html
+合并已经排好序的数组：
+在主方法中有两个已经从大到小排好序的数组，将这两个数组传入子方法中，在子方法中将这两个数组组合成一个从大到小排好序的数组，返回给主方法，在主方法中输出这个新数组
+
+例：
+数组a是  [88,66,2]
+数组b是  [214,105,90,5,3]
+
+输出
+[214,105,90,88,66,5,3,2]
+
+要求用while
+
+
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

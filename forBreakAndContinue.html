@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var teammateHero=[{
+				name:"诺手",
+				location:"上单",
+			},{
+				name:"船长",
+				location:"上单",
+			},{
+				name:"阿狸",
+				location:"中单",
+			},{
+				name:"女警",
+				location:"下路",
+			},{
+				name:"孙悟空",
+				location:"打野",
+			},{
+				name:"琴女",
+				location:"辅助",
+			},{
+				name:"男枪",
+				location:"打野",
+			}];
+			var heroCanCompete=[];
+			for(var i=0;i<teammateHero.length;i++){
+				if(teammateHero[i].name=="船长"){
+					break
+				}else if(teammateHero[i].location=="上单"||teammateHero[i].location=="中单"){
+					heroCanCompete.push(teammateHero[i]);
+				}
+			}
+			console.log(heroCanCompete);
+		}
+	
+	</script>
+</head>
+<body onload="main()">
+英雄联盟匹配脚本
+新建一个文件forBreakAndContinue.html。在主方法中有一个对象数组，代表我方队友的英雄池。每个对象包括，英雄名字，位置。对这个数组进行筛选。如果英雄池中包括船长，那么取消本次比赛。如果这个英雄的位置是上单或者中单，那么将这个英雄挑入到可以进行比赛的英雄数组中。
+
+如果可以进行比赛，那么输出可以进行比赛的所有英雄
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
