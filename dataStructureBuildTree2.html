@@ -14,36 +14,44 @@
 				name:"Emily",
 				position:"teacher",
 				age:25,
-				children:[]
-			},{
-				name:"Eric",
-				position:"classMonitor",
-				age:17
-			},{
-				name:"Steven",
-				position:"PEClassRepresentative",
-				age:17
-			},{
-				name:"Victor",
-				position:"MatheclassRepresentative",
-				age:16
-			},{
-				name:"Linda",
-				position:"EnglishClassRepresentative",
-				age:16
-			},{
-				name:"Lisa",
-				position:"studyCommitteeMember",
-				age:17
-			},{
-				name:"Jason",
-				position:"mathCommitteeMember",
-				age:17
-			},{
-				name:"Joe",
-				position:"EnglishCommitteeMember",
-				age:16
-			},]
+				children:[{
+					name:"Eric",
+					position:"classMonitor",
+					age:17,
+					children:[{
+						name:"Steven",
+						position:"PEClassRepresentative",
+						age:17,
+						children:[]
+					},{
+						name:"Victor",
+						position:"MatheclassRepresentative",
+						age:16,
+						children:[]
+					},{
+						name:"Linda",
+						position:"EnglishClassRepresentative",
+						age:16,
+						children:[]
+					}]
+				},{
+					name:"Lisa",
+					position:"studyCommitteeMember",
+					age:17,
+					children:[{
+						name:"Jason",
+						position:"mathCommitteeMember",
+						age:17,
+						chilidren:[]
+					},{
+						name:"Joe",
+						position:"EnglishCommitteeMember",
+						age:16,
+						children:[]
+					}]
+				}]
+			}]
+			console.log(classDescription);
 		}
 	
 	</script>
@@ -51,7 +59,7 @@
 <body onload="main()">
 数据结构中树形结构研究，可表达成的方式有两种
 （1）采用对象数组描述，父子关系表达为identityCard和parentID
-（2）
+（2）采用对象数组描述，父子关系表达为children
 新建一个文件dataStructureBuildTree2.html
 
 提示1
@@ -65,6 +73,9 @@
 
 提示4
 children:[]
+
+提示：5
+children数组里面直接放他的子对象
 
 </body> 
 </html>
