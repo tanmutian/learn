@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){		
+			var class1=[{
+				name:"Eric",
+				className:"1",
+				age:14
+			},{
+				name:"Linda",
+				className:"1",
+				age:12
+			},{
+				name:'Joe',
+				className:"1",
+				age:11
+			},{
+				name:'Clark',
+				className:"1",
+				age:13
+			},];
+			var class2=[{
+				name:'Royce',
+				className:"2",
+				age:13
+			},{
+				name:'May',
+				className:"2",
+				age:9
+			},{
+				name:'Sam',
+				className:"2",
+				age:12
+			},{
+				name:'Lily',
+				className:"2",
+				age:14
+			},];
+			finalClass=combineTheClass(class1,class2);
+			console.log(finalClass.length);
+		}
+		
+		function combineTheClass(class1,class2){
+			var class3=class1.concat(class2);
+			var theClass=[];
+			for(var i=0;i<class3.length;i++){
+				if(class3[i].className==1&&class3[i].age>=10&&class3[i].age<=13){
+					theClass.push(class3[i]);
+				}
+			}
+			return theClass
+		}
+	
+	</script>
+</head>
+<body onload="main()">
+新建一个文件concatExercise.html
+有两个班级进行合班操作
+班级1和班级2里面的学生分别是对象数组，对象里面包含学生的姓名，班级，年龄。
+将这两个班级对象数组合并成一个对象数组
+统计这个对象数组中来自1班，且年龄在10岁到13岁（包含两端）的人数。将人数返回给主方法
+在主方法中输出人数
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
