@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var array1=['h','l','p','e','m','e'];
+			var finalAnswer=findTheSecret(array1).join("^");
+			console.log(finalAnswer);
+		}
+		
+		function findTheSecret(array){
+			var newArray=[];
+			for(var i=0;i<array.length;i++){
+				if(array[i]=="a"){
+					newArray.push("b");
+				}else if(array[i]=="b"){
+					newArray.push("c");
+				}else if(array[i]=="c"){
+					newArray.push("d");
+				}else if(array[i]=="d"){
+					newArray.push("e");
+				}else if(array[i]=="e"){
+					newArray.push("f");
+				}else if(array[i]=="f"){
+					newArray.push("g");
+				}else if(array[i]=="g"){
+					newArray.push("h");
+				}else if(array[i]=="h"){
+					newArray.push("i");
+				}else if(array[i]=="i"){
+					newArray.push("j");
+				}else if(array[i]=="j"){
+					newArray.push("k");
+				}else if(array[i]=="k"){
+					newArray.push("l");
+				}else if(array[i]=="l"){
+					newArray.push("m");
+				}else if(array[i]=="m"){
+					newArray.push("n");
+				}else if(array[i]=="n"){
+					newArray.push("o");
+				}else if(array[i]=="o"){
+					newArray.push("p");
+				}else if(array[i]=="p"){
+					newArray.push("q");
+				}else if(array[i]=="q"){
+					newArray.push("r");
+				}else if(array[i]=="r"){
+					newArray.push("s");
+				}else if(array[i]=="s"){
+					newArray.push("t");
+				}else if(array[i]=="t"){
+					newArray.push("u");
+				}else if(array[i]=="u"){
+					newArray.push("v");
+				}else if(array[i]=="v"){
+					newArray.push("w");
+				}else if(array[i]=="w"){
+					newArray.push("x");
+				}else if(array[i]=="x"){
+					newArray.push("y");
+				}else if(array[i]=="y"){
+					newArray.push("z");
+				}else if(array[i]=="z"){
+					newArray.push("a");
+				}
+			}
+			return newArray;
+		}
+	
+	</script>
+</head>
+<body onload="main()">
+新建一个文件joinExercise2.html;
+
+简单的加密算法
+在主方法中有一个数组，内容是一句以逗号分割的明文，将这个数组传入子方法，在子方法中进行加密处理，将密文传递给主方法，在主方法输出密文。
+
+加密处理
+将每一个字符向后取一位，将所有取好后的字符^分割
+
+例子
+['h','l','p','e','m','e']
+
+将这个数组转化成
+['i','m','q','f','n','f']
+
+密文是
+i^m^q^f^n^f
+
+在主方法中输出
+i^m^q^f^n^f
+
+提示
+1.如果
+2.如果明文数组怎么样，那么密文数组怎么样
+3.如果明文数组这一项是a，那么密文数组这一项应该是b，。。。
+
+问题提示
+1.23到71行
+2.每两行就有一行有问题
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
