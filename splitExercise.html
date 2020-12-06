@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var secret="a^b^c^d^e^f"
+			var answer=findTheAnswer(secret);
+			console.log(answer);
+		}
+		
+		function findTheAnswer(secret){
+			var array=secret.split('^');
+			var answerArray=[];
+			for(var i=0;i<array.length;i++){
+				if(array[i]=="a"){
+					answerArray.push("z");
+				}else if(array[i]=="b"){
+					answerArray.push("a");
+				}else if(array[i]=="c"){
+					answerArray.push("b");
+				}else if(array[i]=="d"){
+					answerArray.push("c");
+				}else if(array[i]=="e"){
+					answerArray.push("d");
+				}else if(array[i]=="f"){
+					answerArray.push("e");
+				}else if(array[i]=="g"){
+					answerArray.push("f");
+				}else if(array[i]=="h"){
+					answerArray.push("g");
+				}else if(array[i]=="i"){
+					answerArray.push("h");
+				}else if(array[i]=="j"){
+					answerArray.push("i");
+				}else if(array[i]=="k"){
+					answerArray.push("j");
+				}else if(array[i]=="l"){
+					answerArray.push("k");
+				}else if(array[i]=="m"){
+					answerArray.push("l");
+				}else if(array[i]=="n"){
+					answerArray.push("m");
+				}else if(array[i]=="o"){
+					answerArray.push("n");
+				}else if(array[i]=="p"){
+					answerArray.push("o");
+				}else if(array[i]=="q"){
+					answerArray.push("p");
+				}else if(array[i]=="r"){
+					answerArray.push("q");
+				}else if(array[i]=="s"){
+					answerArray.push("r");
+				}else if(array[i]=="t"){
+					answerArray.push("s");
+				}else if(array[i]=="u"){
+					answerArray.push("t");
+				}else if(array[i]=="v"){
+					answerArray.push("u");
+				}else if(array[i]=="w"){
+					answerArray.push("v");
+				}else if(array[i]=="x"){
+					answerArray.push("w");
+				}else if(array[i]=="y"){
+					answerArray.push("x");
+				}else if(array[i]=="z"){
+					answerArray.push("y");
+				};
+			}
+			var answer=answerArray.join("-");
+			return answer;
+		}
+	
+	</script>
+</head>
+<body onload="main()">
+新建一个文件splitExercise.html
+针对加密字符串进行解密
+加密字符串固定格式 i^f^m^q^n^f 
+解密成h-e-l-p-m-e
+
+在主方法中定义一个密文字符串
+将密文字符串传入子方法中
+在子方法中对密文进行解密
+将明文返回给主方法，在主方法中输出明文
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var secret="a.b.c.d.e.f.g.h.j.z";
+			var answer=findTheAnswer(secret);
+			console.log(answer);
+		}
+		
+		function findTheAnswer(secret){
+			var array=secret.split(".");
+			var answerArray=['z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+			var answer=[];
+			for(var i=0;i<array.length;i++){
+				for(var x=1;x<answerArray.length;x++){
+					if(array[i]==answerArray[x]){
+						answer.push(answerArray[x-1]);
+					}
+				}
+			}
+			var finalAnswer=answer.join('-');
+			return finalAnswer;
+		}
+	
+	</script>
+</head>
+<body onload="main()">
+新建一个文件splitExercise2.html
+针对加密字符串进行解密
+加密字符串固定格式 i^f^m^q^n^f 
+解密成h-e-l-p-m-e
+
+在主方法中定义一个密文字符串
+将密文字符串传入子方法中
+在子方法中对密文进行解密
+将明文返回给主方法，在主方法中输出明文
+
+要求：不使用多个if else
+
+提示1
+建立一个明文密文对应数组
+
+提示2
+明文密文对应数组是
+['z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+
+提示3
+要使用两个for
+
+提示4
+两个for是嵌套关系。第一个for遍历密文中的每一个字符。第二个for遍历明文密文对应数组中的部分字符。
+
+
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
