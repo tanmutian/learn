@@ -10,19 +10,44 @@
 	</style>
 	<script type="text/javascript">
 		function main(){
-			var secret="5.13.1.7";
+			var word="game";
+			var array1=word.split("");
+			var secret=makeSecret(array1);
 			var answer=findTheAnswer(secret);
 			console.log(answer);
 		}
 		
-		function findTheAnswer(){
-			var array1=secret.split(".");
+		function makeSecret(array1){
 			var word=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+			var array2=[];
+			var secretArray=[];
 			for(var i=0;i<array1.length;i++){
-				for(var x=0;x<word.length;x++){
-					
+				for(var j=0;j<word.length;j++){
+					if(array1[i]==word[j]){
+						array2.push(j+1);
+					}
 				}
 			}
+			for(var k=array2.length-1;k>=0;k--){
+				secretArray.push(array2[k]);
+			}
+			var secret=secretArray.join(".");
+			return secret;
+		}
+		
+		function findTheAnswer(secret){
+			var array1=secret.split(".");
+			var answer=[];
+			var finalAnswer=[];
+			var word=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+			for(var i=0;i<array1.length;i++){
+				answer.push(word[array1[i]-1]);
+			}
+			for(var x=answer.length-1;x>=0;x--){
+				finalAnswer.push(answer[x]);
+			}
+			var secret=finalAnswer.join("");
+			return secret;
 		}
 	
 	</script>

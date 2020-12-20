@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var a=[1,2,5,6,8,12,1,4,15];
+			var answer=deleteArray(a,1,4);
+			console.log(answer);
+		}
+		
+		function deleteArray(a,deleteIndex,deleteCount){
+			var array=[];
+			var answer=[];
+			var deleteFirst=deleteIndex;
+			var deleteLast=deleteCount+deleteIndex;
+			for(var x=0;x<a.length;x++){
+				if(x<deleteFirst||x>deleteLast-1){
+					answer.push(a[x]);
+				}
+			}
+			console.log(answer);
+			return answer;
+		}
+	
+	</script>
+</head>
+<body onload="main()">
+新建一个文件spliceSelfDone.html
+在主方法中有一个数组
+将这个数组及一些参数传给子方法。
+参数包括
+1 从数组的第几项开始删除
+2 删除几个数
+
+在子方法中进行操作，返回删除后的数组给主方法，在主方法中输出删除后的数组
+
+例子
+a [1,2,3,4,5,6,7,8]
+
+传参b(a,2,3)
+
+输出[1,2,6,7,8]
+
+提示
+1.删就是不推
+2.如果判断
+3.如图
+4.使用下标，即数组的index
+5.不用两个for，一个for就够
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
