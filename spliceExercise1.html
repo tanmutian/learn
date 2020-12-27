@@ -30,6 +30,13 @@
 				name:"Steven",
 				averageGrade:92
 			};
+			var classNextTerm=findNewClass(experimentClass,newMember);
+			console.log(classNextTerm);
+		}
+		
+		function findNewClass(experimentClass,newMember){
+			var classAfterDelete=experimentClass.splice(experimentClass.length-1,1,newMember);
+			return experimentClass
 		}
 	
 	</script>
