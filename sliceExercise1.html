@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var class1=[{
+				name:"Lily",
+				grade:"98",
+			},{
+				name:"Jeff",
+				grade:"96",
+			},{
+				name:"Joe",
+				grade:"95",
+			},{
+				name:"Clara",
+				grade:"93",
+			},{
+				name:"Sherry",
+				grade:"89",
+			},{
+				name:"Linda",
+				grade:"85",
+			}];
+			var class2=[{
+				name:"Tony",
+				grade:"99",
+			},{
+				name:"Victor",
+				grade:"98",
+			},{
+				name:"Ling",
+				grade:"94",
+			},{
+				name:"Coach",
+				grade:"90",
+			},{
+				name:"Julin",
+				grade:"84",
+			},{
+				name:"Keivn",
+				grade:"81",
+			}];
+			var finalArray=findTheNewClass(class1,class2);
+			console.log(finalArray);
+		}
+		
+		function findTheNewClass(class1,class2){
+			var theClass=[];
+			var theNumber;
+			for(var i=class1.length/2;i<class1.length;i++){
+				theClass.push(class1[i]);
+			}
+			for(var x=class2.length/2;x<class2.length;x++){
+				theClass.push(class2[x]);
+			}
+			for(var y=1;y<theClass.length;y++){
+				for(var z=0;z<y;z++){
+					if(theClass[z+1].grade>theClass[z].grade){
+						theNumber=theClass[z];
+						theClass[z]=theClass[z+1];
+						theClass[z+1]=theNumber;
+					}
+				}
+			}
+			return theClass;
+		}
+	
+	</script>
+</head>
+<body onload="main()">
+新建一个文件sliceExercise.html
+
+班级合并，有两个班，学生数都是偶数，分别取两个班的后一半同学组成补习班，将两个班级后一半同学组成一个数组，并对这个数组中的学生平均成绩进行从高到低排序。每个数组中学生信息是一个对象，对象中包括学生姓名，平均成绩。
+
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
