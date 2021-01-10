@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var class1=[{
+				name:"Julin",
+				sex:"female",
+				averageGrade:88
+			},{
+				name:"Karl",
+				sex:"male",
+				averageGrade:93
+			},{
+				name:"Joe",
+				sex:"male",
+				averageGrade:50
+			},{
+				name:"Lily",
+				sex:"female",
+				averageGrade:99
+			},{
+				name:"Keiven",
+				sex:"male",
+				averageGrade:85
+			},{
+				name:"Robin",
+				sex:"male",
+				averageGrade:98
+			}];
+			var class2=[{
+				name:"Coach",
+				sex:"male",
+				averageGrade:50
+			},{
+				name:"Lin",
+				sex:"female",
+				averageGrade:99
+			},{
+				name:"Jason",
+				sex:"male",
+				averageGrade:88
+			},{
+				name:"Linda",
+				sex:"female",
+				averageGrade:95
+			},{
+				name:"Tony",
+				sex:"male",
+				averageGrade:97
+			}];
+			var finalNumber=findTheNumberOfClass(class1,class2);
+			console.log(finalNumber);
+		}
+		
+		function findTheNumberOfClass(class1,class2){
+			var value;
+			var theClass=[];
+			var theNumber=[];
+			for(var i=class1.length-1;i>=0;i--){
+				for(var j=0;j<i;j++){
+					if(class1[j+1].averageGrade>=class1[j].averageGrade){
+						value=class1[j];
+						class1[j]=class1[j+1];
+						class1[j+1]=value;
+					}
+				}
+			}
+			for(var k=class2.length-1;k>=0;k--){
+				for(var x=0;x<k;x++){
+					if(class2[x+1].averageGrade>=class2[x].averageGrade){
+						value=class2[x];
+						class2[x]=class2[x+1];
+						class2[x+1]=value;
+					}
+				}
+			}
+			if(class1.length%2==1){
+				for(var y=class1.length/2-0.5;y<class1.length;y++){
+					theClass.push(class1[y]);
+				}
+			}else{
+				for(var z=class1.length/2;z<class1.length;z++){
+					theClass.push(class1[z]);
+				}
+			}
+			if(class2.length%2==1){
+				for(var a=class2.length/2-0.5;a<class2.length;a++){
+					theClass.push(class2[a]);
+				}
+			}else{
+				for(var b=class2.length/2;b<class2.length;b++){
+					theClass.push(class2[b]);
+				}
+			}
+			for(var k=theClass.length-1;k>=0;k--){
+				for(var x=0;x<k;x++){
+					if(theClass[x+1].averageGrade>=theClass[x].averageGrade){
+						value2=theClass[x];
+						theClass[x]=theClass[x+1];
+						theClass[x+1]=value2;
+					}
+				}
+			}
+			for(var e=0;e<theClass.length;e++){
+				if(theClass[e].sex=="male"&&theClass[e].averageGrade>60){
+					theNumber.push(theClass[e]);
+				}
+			}
+			console.log(theClass);
+			return theNumber.length
+			
+		}
+		
+	</script>
+</head>
+<body onload="main()">
+新建一个文件sliceExercise2.html
+
+班级合并，有两个“乱序班”，学生“数不定”，分别取两个班的后一半同学组成补习班（奇数班从“中间”那个同学算起），将两个班级成绩后一半同学组成一个数组，并对这个数组中的学生平均成绩进行从高到低排序。统计这个新组成班级中男生，且平均成绩大于60分的人数，返回给主方法，在主方法中输出人数。每个数组中学生信息是一个对象，对象中包括学生姓名，平均成绩，性别。
+
+优化提示
+把多次执行，可以抽象成一个方法的，抽离出来，列成一个方法。
+
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

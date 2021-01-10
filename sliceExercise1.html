@@ -61,7 +61,7 @@
 			for(var x=class2.length/2;x<class2.length;x++){
 				theClass.push(class2[x]);
 			}
-			for(var y=1;y<theClass.length;y++){
+			for(var y=theClass.length-1;y>=0;y--){
 				for(var z=0;z<y;z++){
 					if(theClass[z+1].grade>theClass[z].grade){
 						theNumber=theClass[z];
