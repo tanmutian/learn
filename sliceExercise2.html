@@ -21,7 +21,7 @@
 			},{
 				name:"Joe",
 				sex:"male",
-				averageGrade:50
+				averageGrade:61
 			},{
 				name:"Lily",
 				sex:"female",
@@ -61,7 +61,6 @@
 			console.log(finalNumber);
 		}
 		
-		
 		function sortTheClass(classParam){
 			var value;
 			for(var i=classParam.length-1;i>=0;i--){
@@ -75,40 +74,29 @@
 			}
 			return classParam
 		}
-		
+
+		function determineTheNumber(classParam){
+			var theClass=[];
+			if(classParam.length%2==1){
+				for(var y=classParam.length/2-0.5;y<classParam.length;y++){
+					theClass.push(classParam[y]);
+				}
+			}else{
+				for(var z=classParam.length/2;z<classParam.length;z++){
+					theClass.push(classParam[z]);
+				}
+			}
+			return theClass;
+		}
 		
 		function findTheNumberOfClass(class1,class2){
-			class1=sortTheClass(class1);
-			class2=sortTheClass(class2);
-			var theClass=[];
+			var class1=sortTheClass(class1);
+			var class2=sortTheClass(class2);
+			var class1Half=determineTheNumber(class1);
+			var class2Half=determineTheNumber(class2);
 			var theNumber=[];
-			if(class1.length%2==1){
-				for(var y=class1.length/2-0.5;y<class1.length;y++){
-					theClass.push(class1[y]);
-				}
-			}else{
-				for(var z=class1.length/2;z<class1.length;z++){
-					theClass.push(class1[z]);
-				}
-			}
-			if(class2.length%2==1){
-				for(var a=class2.length/2-0.5;a<class2.length;a++){
-					theClass.push(class2[a]);
-				}
-			}else{
-				for(var b=class2.length/2;b<class2.length;b++){
-					theClass.push(class2[b]);
-				}
-			}
-			for(var k=theClass.length-1;k>=0;k--){
-				for(var x=0;x<k;x++){
-					if(theClass[x+1].averageGrade>=theClass[x].averageGrade){
-						value2=theClass[x];
-						theClass[x]=theClass[x+1];
-						theClass[x+1]=value2;
-					}
-				}
-			}
+			var theClass=class1Half.concat(class2Half);
+			var theClass=sortTheClass(theClass);
 			for(var e=0;e<theClass.length;e++){
 				if(theClass[e].sex=="male"&&theClass[e].averageGrade>60){
 					theNumber.push(theClass[e]);
@@ -116,7 +104,6 @@
 			}
 			console.log(theClass);
 			return theNumber.length
-			
 		}
 		
 	</script>
