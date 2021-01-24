@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var string="nice to meet you";
+			var finalAnswer=findTheAnswer(string);
+			console.log(finalAnswer);
+		}
+		
+		function findTheAnswer(string){
+			var firstArray=string.split(" ");
+			var turnedArray=[];
+			for(var i=firstArray.length-1;i>=0;i--){
+				turnedArray.push(firstArray[i]);
+			}
+			
+		}
+		
+	
+	</script>
+</head>
+<body onload="main()">
+新建stringBaseExercise4.html
+
+请将任意一句话中的所有单词倒叙，这句话顺序不动。
+在主方法中有一句话，将这句话传入子方法中，在子方法中将这句话所有单词倒叙，这句话顺序不动。将结果返回给主方法，在主方法中输出结果
+
+例
+nice to meet you
+
+输出
+ecin ot teem uoy
+
+
+限制思路：
+先把nice to meet you装换成数组
+['nice','to','meet','you']
+
+把数组中的每一个独立的单词倒序
+['ecin','ot','teem','uoy']
+
+join
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
