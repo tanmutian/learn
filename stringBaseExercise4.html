@@ -18,10 +18,15 @@
 		function findTheAnswer(string){
 			var firstArray=string.split(" ");
 			var turnedArray=[];
-			for(var i=firstArray.length-1;i>=0;i--){
-				turnedArray.push(firstArray[i]);
+			for(i=0;i<firstArray.length;i++){
+				var oppositeArray=[];
+				turnedArray=firstArray[i].split("");
+				for(j=turnedArray.length-1;j>=0;j--){
+					oppositeArray.push(turnedArray[j]);
+				}
+				firstArray[i]=oppositeArray.join("")
 			}
-			
+			return firstArray;
 		}
 		
 	
