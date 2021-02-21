@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var string="my name is tan mu tian"
+			var finalString=findTheString(string);
+			console.log(finalString);
+		}
+		
+		function findTheString(string){
+			var stringArray=string.split(" ");
+			for(var i=0;i<stringArray.length;i++){
+				var oppositeArray=[];
+				for(var j=stringArray[i].length-1;j>=0;j--){
+					oppositeArray.push(stringArray[i][j]);
+				}
+				var oppositeString=oppositeArray.join("");
+				var item=stringArray[i].concat("*",oppositeString);
+				stringArray[i]=item;
+			}
+			var finalString=stringArray.join(" ");
+			return finalString
+		}
+		
+	
+	</script>
+</head>
+<body onload="main()">
+新建stringConcatExercise2.html
+镜像单词间隔符字符串
+在主方法中有一个字符串，将这个字符串传入子方法中，在子方法中对这个字符串中的每个单词镜像，镜像单词之间用*作为分割。
+将处理后的字符串传给主方法，在主方法中输出这个字符串。
+
+例子
+my name is tan mu tian
+
+返回
+my*ym name*eman is*si tan*nat mu*um tian*nait
+
+
+
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

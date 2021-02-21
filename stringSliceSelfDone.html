@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+	<title>learn</title>
+	<style>
+	
+	</style>
+	<script type="text/javascript">
+		function main(){
+			var string="my name is tan mu tian";
+			var startValue=55;
+			var finalValue=2;
+			var finalString=findTheString(string,startValue,finalValue);
+			console.log(finalString);
+		}
+		
+		function findTheString(string,startValue,finalValue){
+			var finalArray=[];
+			if(startValue<0){
+				console.log("左边边界不能小于0。");
+			}else if(finalValue>22){
+				console.log("右边边界不能大于22。");
+			}else if(startValue>finalValue){
+				console.log("左边边界不能大于右边边界");
+			}else{
+				for(var i=startValue;i<=finalValue;i++){
+					finalArray.push(string[i]);
+				}
+				var finalString=finalArray.join("");
+				return finalString;
+			};
+		}
+		
+	
+	</script>
+</head>
+<body onload="main()">
+新建stringSliceSelfDone.html
+
+在主方法中有一个字符串，将这个字符串,以及要截取的第一项和最后一项的位置传入子方法中，在子方法中截取这个字符串第一项和最后一项位置中间的子字符串，将子字符串返回给主方法，在主方法中输出这个子字符串
+
+
+例子
+my name is tan mu tian
+
+11 22
+
+返回
+tan mu tian
+
+提示
+1、优化分为代码优化和用户体验优化等。
+2、用户体验优化包括边界值提示
+3、具体操作：在子方法中判断startValue和finalValue的值。如果startValue小于0，提示：左边边界不能小于0。如果finalValue大于长度，提示：右侧边界不能大于字符串长度。如果startValue大于等于finalValue，提示左侧边界应该小于右侧边界。
+
+</body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
