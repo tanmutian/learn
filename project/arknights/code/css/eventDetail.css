@@ -1,0 +1,13 @@
+.global{
+	width:1300px;
+	margin:0 auto;
+	background:#1a2937;
+}
+
+.textRed{
+	float:left;
+	width:900px;
+	margin-left:50px;
+	font-size:17px;
+	color:red;
+}
