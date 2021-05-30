@@ -1,0 +1,57 @@
+.pictureStyle{
+	float:left;
+	width:120px;
+	height:120px;
+	background:blue;
+	margin-left:60px;
+	margin-top:22px;
+}
+
+.arrow{
+	float:left;
+	width:120px;
+	height:120px;
+	background:blue;
+	margin-left:50px;
+	margin-top:22px;
+}
+
+.yellowPart{
+	float:left;
+	width:1300px;
+	height:50px;
+	background:yellow;
+}
+
+.text{
+	float:left;
+	width:300px;
+	height:150px;
+	margin-left:70px;
+	margin-top:150px;
+	background:red;
+}
+
+.centralPicture{
+	float:left;
+	background:red;
+	width:400px;
+	height:400px;
+	margin-left:80px;
+	margin-top:50px;
+}
+
+.logoStyle{
+	float:left;
+	width:271px;
+	height:254px;
+	margin-left:90px;
+	margin-top:98px;
+}
+
+.allCharacter{
+	float:left;
+	width:1300px;
+	height:175px;
+	background:yellow;
+}
