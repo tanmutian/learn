@@ -55,3 +55,13 @@
 	height:175px;
 	background:yellow;
 }
+
+.global{
+	width:1300px;
+	margin:0 auto;
+	background:#1a2937;
+}
+
+.clear{
+	clear:both
+}
