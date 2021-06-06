@@ -80,3 +80,7 @@
 	margin:0 auto;
 	background:#1a2937;
 }
+
+.clear{
+	clear:both
+}
