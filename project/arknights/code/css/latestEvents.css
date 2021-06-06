@@ -113,3 +113,28 @@
 	color:white;
 	background:#1d3041;
 }
+
+.titleArea{
+	float:left;
+	width:1300px;
+}
+
+.title{
+	float:left;
+	margin-left:80px;
+	font-size:30px;
+	color:#57c6ff;
+}
+
+.global{
+	width:1300px;
+	margin:0 auto;
+	background:#1a2937;
+}
+
+.yellow{
+	float:left;
+	width:1300px;
+	height:50px;
+	background:yellow;
+}
