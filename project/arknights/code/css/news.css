@@ -77,3 +77,27 @@
 	font-size:20px;
 	color:#c2c8d1;
 }
+
+.title{
+	float:left;
+	margin-left:60px;
+	font-size:30px;
+	color:#57c6ff;
+}
+
+.yellow{
+	float:left;
+	width:1300px;
+	height:50px;
+	background:yellow;
+}
+
+.global{
+	width:1300px;
+	margin:0 auto;
+	background:#1a2937;
+}
+
+.clear{
+	clear:both;
+}
