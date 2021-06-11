@@ -138,3 +138,7 @@
 	height:50px;
 	background:yellow;
 }
+
+.clear{
+	clear:both;
+}
