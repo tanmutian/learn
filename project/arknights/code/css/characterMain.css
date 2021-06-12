@@ -1,0 +1,43 @@
+.background{
+	float:left;
+	width:150px;
+	height:400px;
+	background:linear-gradient(to right, #19193a, #53657b, #19193a);
+}
+
+.imgStyle{
+	float:left;
+	width:110px;
+	height:72px;
+	margin-top:164px;
+	margin-left:20px;
+}
+
+.firstBackground{
+	float:left;width:150px;
+	height:400px;
+	margin-left:50px;
+	background:linear-gradient(to right, #19193a, #53657b, #19193a);
+}
+
+.global1{
+	margin:0;
+	pading:0;
+}
+
+.global2{
+	width:1300px;
+	margin:0 auto;
+	background:#151731;
+}
+
+.yellow{
+	float:left;
+	width:1300px;
+	height:50px;
+	background:yellow;
+}
+
+.clear{
+	clear:both
+}
