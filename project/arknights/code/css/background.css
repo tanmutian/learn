@@ -1,0 +1,139 @@
+.global{
+	width:1300px;
+	margin:0 auto;
+	background:#1a2937;
+}
+
+.yellow{
+	float:left;
+	width:1300px;
+	height:50px;
+	background:yellow;
+}
+
+.titleArea{
+	float:left;
+	width:1300px;
+}
+
+.title{
+	float:left;
+	margin-left:50px;
+	margin-top:10px;
+	font-size:30px;
+	color:#57c6ff;
+}
+
+.totalArea{
+	float:left;
+	width:1300px;
+	height:625px;
+	margin-top:20px;
+	background:black;
+}
+
+.firstImg{
+	float:left;
+	width:382px;
+	height:625px;
+}
+
+.position1{
+	float:left;
+	width:262px;
+	height:360px;
+	margin-left:113px;
+	margin-top:113px;
+}
+
+.imgStyle1{
+	float:left;
+	width:262px;
+	height:360px;
+}
+
+.secondArea{
+	float:left;
+	width:918px;
+	height:235px;
+}
+
+.position2{
+	float:left;
+	width:151px;
+	height:218px;
+	margin-left:180px;
+	margin-top:30px;
+}
+
+.imgStyle2{
+	float:left;
+	width:151px;
+	height:218px;
+}
+
+.position3{
+	float:left;
+	width:264px;
+	height:223px;
+	margin-left:213px;
+	margin-top:50px;
+}
+
+.imgStyle3{
+	float:left;
+	width:264px;
+	height:223px;
+}
+
+.thirdArea{
+	float:left;
+	width:918px;
+	height:277px;
+	margin-top:95px;
+}
+
+.position4{
+	float:left;
+	width:173px;
+	height:290px;
+	margin-left:93px;
+	margin-top:13px;
+}
+
+.imgStyle4{
+	float:left;
+	width:157px;
+	height:270px;
+}
+
+.position5{
+	float:left;
+	width:162px;
+	height:182px;
+	margin-left:119px;
+}
+
+.imgStyle5{
+	float:left;
+	width:162px;
+	height:182px;
+}
+
+.position6{
+	float:left;
+	width:206px;
+	height:270px;
+	margin-left:155px;
+	margin-top:8px;
+}
+
+.imgStyle6{
+	float:left;
+	width:206px;
+	height:270px;
+}
+
+.clear{
+	clear:both;
+}
