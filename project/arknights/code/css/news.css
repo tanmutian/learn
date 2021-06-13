@@ -92,10 +92,15 @@
 	background:yellow;
 }
 
-.global{
+.global1{
 	width:1300px;
 	margin:0 auto;
 	background:#1a2937;
+}
+
+.global2{
+	float:left;
+	width:1300px;
 }
 
 .clear{
