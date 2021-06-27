@@ -14,7 +14,8 @@ class App extends React.Component {
         return (
             <div>
                 <div className={styles.title_div_userMain}>
-                    {user.main.show}
+                    {/* {user.main.show} */}
+                    12345666666uuuuu
                 </div>
                 <div>
                     <DatePicker />
