@@ -9,14 +9,14 @@ import infected from '../../image/infected.jpg'
 import originiumArt from '../../image/originiumArt.jpg'
 import rhodesLand from '../../image/rhodesLand.jpg'
 
-@connect(({announcement}) => ({announcement}))
+@connect(({background}) => ({background}))
 class App extends React.Component {
 	constructor(props) {
 		super(props);
 	}
 
 	render() {
-		const { announcemnet } = this.props;
+		const { background } = this.props;
 		return (
 			<div className={styles.global}>
 				<div className={styles.yellow}>
