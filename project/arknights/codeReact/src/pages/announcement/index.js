@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'dva';
 import { DatePicker } from 'antd';
 import styles from './index.less';
-import announcement2 from '../designSketch/announcement2.jpg'
+import announcement2 from '../../image/announcement2.jpg'
 
 @connect(({announcement}) => ({announcement}))
 class App extends React.Component {
@@ -34,7 +34,7 @@ class App extends React.Component {
 					
 					<div className={styles.outside}>
 					
-						<img className={styles.imgStyle} src={announcement2}>
+						<img className={styles.imgStyle} src={announcement2}/>
 						
 						
 						<div className={styles.description}>
@@ -61,7 +61,7 @@ class App extends React.Component {
 					
 					<div className={styles.outside}>
 					
-						<img className={styles.imgStyle} src={announcement2}>
+						<img className={styles.imgStyle} src={announcement2}/>
 						
 						<div className={styles.description}>
 							Repair instructions for abnormal conditions on March 09
@@ -82,7 +82,7 @@ class App extends React.Component {
 					
 					<div className={styles.followOutside}>
 					
-						<img className={styles.imgStyle} src={announcement2}>
+						<img className={styles.imgStyle} src={announcement2}/>
 						
 						<div className={styles.description}>
 							Downtime maintenance for the new version
