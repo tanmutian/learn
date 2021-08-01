@@ -1,9 +1,17 @@
 import React from 'react';
 import { connect } from 'dva';
-import { Button,Tooltip ,Radio, Input, Space} from 'antd';
+import { Button,Tooltip ,Radio, Input, Space,Carousel} from 'antd';
 import { SearchOutlined } from '@ant-design/icons'
 import { PoweroffOutlined } from '@ant-design/icons'
 import styles from './index.less';
+
+const contentStyle = {
+    height: '160px',
+    color: '#fff',
+    lineHeight: '160px',
+    textAlign: 'center',
+    background: '#364d79',
+  };
 
 @connect(({ user }) => ({ user }))
 class App extends React.Component {
@@ -110,6 +118,22 @@ class App extends React.Component {
                     <Radio.Button value="c">Beijing</Radio.Button>
                     <Radio.Button value="d">Chengdu</Radio.Button>
                 </Radio.Group>
+                </div>
+                <div className={styles.button1}>
+                    <Carousel autoplay>
+                        <div>
+                        <h3 style={contentStyle}>1</h3>
+                        </div>
+                        <div>
+                        <h3 style={contentStyle}>2</h3>
+                        </div>
+                        <div>
+                        <h3 style={contentStyle}>3</h3>
+                        </div>
+                        <div>
+                        <h3 style={contentStyle}>4</h3>
+                        </div>
+                    </Carousel>
                 </div>
             </div>
             
