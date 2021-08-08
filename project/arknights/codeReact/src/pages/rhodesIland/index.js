@@ -4,16 +4,6 @@ import { DatePicker,Carousel } from 'antd';
 import styles from './index.less';
 import city5 from '../../image/city5.png';
 
-const contentStyle = {
-    width:'200px',
-    height: '160px',
-    color: '#fff',
-    lineHeight: '160px',
-    textAlign: 'center',
-    background: '#364d79',
-    color:'red'
-  };
-
 @connect(({ rhodesIland }) => ({ rhodesIland }))
 class App extends React.Component {
     constructor(props) {
@@ -26,29 +16,33 @@ class App extends React.Component {
             <div className={styles.global}>
                 <div className={styles.yellowPart}>
                 </div>
+
+                <div className={styles.contentMain}>
+                    <Carousel autoplay>
+                        <div className={styles.contentStyle}>
+                            
+                                1
+                           
+                        </div>
+                        <div className={styles.contentStyle}>
+                           
+                                2
+                            
+                        </div>
+                        <div className={styles.contentStyle}>
+                            
+                                3
+                            
+                        </div>
+                        <div className={styles.contentStyle}>
+                           
+                                8
+                         
+                        </div>
+                    </Carousel>
+                </div>
                 
-                <Carousel autoplay>
-                    <div>
-                        <h1 style={contentStyle}>
-                            1
-                        </h1>
-                    </div>
-                    <div>
-                        <h1 style={contentStyle}>
-                            2
-                        </h1>
-                    </div>
-                    <div>
-                        <h1 style={contentStyle}>
-                            3
-                        </h1>
-                    </div>
-                    <div>
-                        <h1 style={contentStyle}>
-                            4
-                        </h1>
-                    </div>
-                </Carousel>
+                
                 <div className={styles.text}>
                 </div>
                 
