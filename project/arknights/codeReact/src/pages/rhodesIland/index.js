@@ -3,6 +3,7 @@ import { connect } from 'dva';
 import { DatePicker,Carousel } from 'antd';
 import styles from './index.less';
 import city5 from '../../image/city5.png';
+import amiya from '../../image/amiya.png';
 
 @connect(({ rhodesIland }) => ({ rhodesIland }))
 class App extends React.Component {
@@ -20,10 +21,20 @@ class App extends React.Component {
                 <div className={styles.contentMain}>
                     <Carousel autoplay>
                         <div className={styles.contentStyle}>
+                            <div className={styles.text}>
+                                The leader of the rhodesIland, with the highest executive power.
+                            </div>
+
+                            <div className={styles.centralPicture}>
+                                <img  className={styles.pictureArea} src={amiya}/>
+                            </div> 
                             
-                                1
-                           
+                            
+                            <div className={styles.logoStyle}>
+                                <img className={styles.imgArea} src={city5} />
+                            </div>
                         </div>
+                        
                         <div className={styles.contentStyle}>
                            
                                 2
@@ -43,15 +54,7 @@ class App extends React.Component {
                 </div>
                 
                 
-                <div className={styles.text}>
-                </div>
                 
-                <div className={styles.centralPicture}>
-                </div>
-                
-                <div className={styles.logoStyle}>
-                    <img className={styles.imgArea} src={city5} />
-                </div>
                 
                 <div className={styles.allCharacter}>
                     <div className={styles.arrow}>
