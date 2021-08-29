@@ -7,7 +7,7 @@ import longMen from '../../image/longMen.png'
 import rhineLab from '../../image/rhineLab.png'
 import penguinLogistics from '../../image/penguinLogistics.png'
 
-//@connect(({characterMain2}) => ({characterMain2}))
+//@connect(({characterMain}) => ({characterMain}))
 const CharacterMain =()=>{
 
     return (

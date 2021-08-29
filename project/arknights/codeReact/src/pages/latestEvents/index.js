@@ -6,7 +6,7 @@ import newCharacter1 from '../../image/newCharacter1.jpg'
 import activity1 from '../../image/activity1.jpg'
 import defenceActivity from '../../image/defenceActivity.jpg'
 
-// @connect(({ user }) => ({ user }))
+// @connect(({ latestEvent }) => ({ latestEvent }))
 const LatestEvent =()=>{
 
     return (

@@ -8,7 +8,7 @@ import kaltsit from '../../image/kaltsit.png';
 import blaze from '../../image/blaze.png';
 import rosmontis from '../../image/rosmontis.png';
 
-// @connect(({ user }) => ({ user }))
+// @connect(({ rhodesIland }) => ({ rhodesIland }))
 const rhodesIland =()=>{
 
     return (

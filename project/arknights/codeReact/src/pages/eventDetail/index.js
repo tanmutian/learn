@@ -8,7 +8,7 @@ import clothes1 from '../../image/clothes1.jpg'
 import clothes2 from '../../image/clothes2.jpg'
 import miningArea from '../../image/miningArea.jpg'
     
-// @connect(({ user }) => ({ user }))
+// @connect(({ eventDetail }) => ({ eventDetail }))
 const EventDetail =()=>{
 
     return (

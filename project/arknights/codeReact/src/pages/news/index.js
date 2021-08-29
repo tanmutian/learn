@@ -4,7 +4,7 @@ import { DatePicker } from 'antd';
 import styles from './index.less';
 import notice from '../../image/notice.png'
     
-// @connect(({ user }) => ({ user }))
+// @connect(({ news }) => ({ news }))
 const News =()=>{
 
     return (
