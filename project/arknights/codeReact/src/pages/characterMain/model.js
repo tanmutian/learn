@@ -1,5 +1,5 @@
 export default {
-    namespace: 'characterMain',
+    namespace: 'characterMain2',
     state: {
     },
     reducers: {
