@@ -13,6 +13,15 @@ const CharacterMain =()=>{
     return (
         <div className={styles.global}>
             <div className={styles.yellow}>
+                <div className={styles.content1}>
+                    Events and news
+                </div>
+                <div className={styles.content2}>
+                    Background
+                </div>
+                <div className={styles.content2}>
+                    Operator data
+                </div>
             </div>
             
             <div className={styles.area1}>
