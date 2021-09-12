@@ -6,14 +6,18 @@ import rhodesIland from '../../image/rhodesIland.png'
 import longMen from '../../image/longMen.png'
 import rhineLab from '../../image/rhineLab.png'
 import penguinLogistics from '../../image/penguinLogistics.png'
+import { history } from 'umi';
 
 //@connect(({characterMain}) => ({characterMain}))
 const CharacterMain =()=>{
+    const onClickLatestEvents=()=>{
+        history.push('/latestEvents');
+    }
 
     const menuEvents = (
         <Menu>
             <Menu.Item>
-            <div className={styles.dropDown} target="_blank" rel="noopener noreferrer">
+            <div onClick={onClickLatestEvents}  className={styles.dropDown} target="_blank" rel="noopener noreferrer">
                 Latest Events
             </div>
             </Menu.Item>
