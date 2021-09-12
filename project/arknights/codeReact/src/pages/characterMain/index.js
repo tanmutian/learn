@@ -10,7 +10,7 @@ import penguinLogistics from '../../image/penguinLogistics.png'
 //@connect(({characterMain}) => ({characterMain}))
 const CharacterMain =()=>{
 
-    const menu1 = (
+    const menuEvents = (
         <Menu>
             <Menu.Item>
             <div className={styles.dropDown} target="_blank" rel="noopener noreferrer">
@@ -18,13 +18,38 @@ const CharacterMain =()=>{
             </div>
             </Menu.Item>
             <Menu.Item>
-            <div target="_blank" rel="noopener noreferrer" >
+            <div className={styles.dropDown} target="_blank" rel="noopener noreferrer" >
                 News
             </div>
             </Menu.Item>
             <Menu.Item>
-            <div target="_blank" rel="noopener noreferrer" >
+            <div className={styles.dropDown} target="_blank" rel="noopener noreferrer" >
                 announcement
+            </div>
+            </Menu.Item>
+        </Menu>
+    );
+
+    const menuCharacter = (
+        <Menu>
+            <Menu.Item>
+            <div className={styles.dropDown} target="_blank" rel="noopener noreferrer">
+                RhodesIsLand
+            </div>
+            </Menu.Item>
+            <Menu.Item>
+            <div className={styles.dropDown} target="_blank" rel="noopener noreferrer" >
+                Longmen
+            </div>
+            </Menu.Item>
+            <Menu.Item>
+            <div className={styles.dropDown} target="_blank" rel="noopener noreferrer" >
+                Rhine Lab
+            </div>
+            </Menu.Item>
+            <Menu.Item>
+            <div className={styles.dropDown} target="_blank" rel="noopener noreferrer" >
+                Penguin Logistics
             </div>
             </Menu.Item>
         </Menu>
@@ -34,18 +59,21 @@ const CharacterMain =()=>{
     return (
         <div className={styles.global}>
             <div className={styles.yellow}>
-                <Dropdown overlay={menu1} placement="bottomCenter">
+                <Dropdown overlay={menuEvents} placement="bottomCenter">
                     <div className={styles.content1}>
                         Events and news
                     </div>
                 </Dropdown>
-                
+
                 <div className={styles.content2}>
-                    Background
+                     Background
                 </div>
-                <div className={styles.content2}>
-                    Operator data
-                </div>
+
+                <Dropdown overlay={menuCharacter} placement="bottomCenter">
+                    <div className={styles.content2}>
+                        Operator data
+                    </div>
+                </Dropdown> 
             </div>
             
             <div className={styles.area1}>
