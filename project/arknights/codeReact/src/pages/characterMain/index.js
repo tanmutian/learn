@@ -10,24 +10,36 @@ import { history } from 'umi';
 
 //@connect(({characterMain}) => ({characterMain}))
 const CharacterMain =()=>{
-    const onClickLatestEvents=()=>{
-        history.push('/latestEvents');
+    const historyLatestEvents =()=>{
+        history.push('/latestEvents')
+    }
+
+    const historyNews =()=>{
+        history.push('/News')
+    }
+
+    const historyAnnouncement =()=>{
+        history.push('/announcement')
+    }
+
+    const historyRhodesIland =()=>{
+        history.push('/rhodesIland')
     }
 
     const menuEvents = (
         <Menu>
             <Menu.Item>
-            <div onClick={onClickLatestEvents}  className={styles.dropDown} target="_blank" rel="noopener noreferrer">
+            <div onClick={historyLatestEvents} className={styles.dropDown} target="_blank" rel="noopener noreferrer">
                 Latest Events
             </div>
             </Menu.Item>
             <Menu.Item>
-            <div className={styles.dropDown} target="_blank" rel="noopener noreferrer" >
+            <div onClick={historyNews} className={styles.dropDown} target="_blank" rel="noopener noreferrer" >
                 News
             </div>
             </Menu.Item>
             <Menu.Item>
-            <div className={styles.dropDown} target="_blank" rel="noopener noreferrer" >
+            <div onClick={historyAnnouncement} className={styles.dropDown} target="_blank" rel="noopener noreferrer" >
                 announcement
             </div>
             </Menu.Item>
@@ -37,7 +49,7 @@ const CharacterMain =()=>{
     const menuCharacter = (
         <Menu>
             <Menu.Item>
-            <div className={styles.dropDown} target="_blank" rel="noopener noreferrer">
+            <div onClick={historyRhodesIland} className={styles.dropDown} target="_blank" rel="noopener noreferrer">
                 RhodesIsLand
             </div>
             </Menu.Item>
