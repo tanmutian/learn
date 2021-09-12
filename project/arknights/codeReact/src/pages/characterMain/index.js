@@ -1,6 +1,6 @@
 import React,{useCallback,useMomo,useState} from 'react';
 import {connect} from 'dva';
-import { DatePicker } from 'antd';
+import { DatePicker, Menu, Dropdown, Button, Space } from 'antd';
 import styles from './index.less';
 import rhodesIland from '../../image/rhodesIland.png'
 import longMen from '../../image/longMen.png'
@@ -10,12 +10,36 @@ import penguinLogistics from '../../image/penguinLogistics.png'
 //@connect(({characterMain}) => ({characterMain}))
 const CharacterMain =()=>{
 
+    const menu1 = (
+        <Menu>
+            <Menu.Item>
+            <div className={styles.dropDown} target="_blank" rel="noopener noreferrer">
+                Latest Events
+            </div>
+            </Menu.Item>
+            <Menu.Item>
+            <div target="_blank" rel="noopener noreferrer" >
+                News
+            </div>
+            </Menu.Item>
+            <Menu.Item>
+            <div target="_blank" rel="noopener noreferrer" >
+                announcement
+            </div>
+            </Menu.Item>
+        </Menu>
+    );
+    
+
     return (
         <div className={styles.global}>
             <div className={styles.yellow}>
-                <div className={styles.content1}>
-                    Events and news
-                </div>
+                <Dropdown overlay={menu1} placement="bottomCenter">
+                    <div className={styles.content1}>
+                        Events and news
+                    </div>
+                </Dropdown>
+                
                 <div className={styles.content2}>
                     Background
                 </div>
