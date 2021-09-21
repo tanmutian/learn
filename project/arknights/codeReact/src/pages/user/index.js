@@ -48,6 +48,7 @@ const User =()=>{
             <Dropdown overlay={menu} placement="topRight">
                 <Button>topRight</Button>
             </Dropdown>
+            新建一个公共组件，组件名称为版权信息，里面内容包括版权声明，个人介绍，个人信息（电话，邮编，email，住址）。自己设计。放在每个页面的最下方
         </div>   
     )
 }
