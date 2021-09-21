@@ -4,9 +4,6 @@ export default {
         commonMain: {
             show: 'commonShow',
         },
-        commonChildComponent1: {
-            show: 'commonChildComponent1Of111',
-        },
     },
     reducers: {
         save(state, action) {

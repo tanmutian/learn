@@ -3,16 +3,14 @@ import {connect} from 'dva';
 import { DatePicker } from 'antd';
 import styles from './index.less';
 import announcement2 from '../../image/announcement2.jpg'
-import Test from '../../libs/test/test.js'
+import Navigation from '../../libs/navigation/navigation.js'
 
 // @connect(({announcement}) => ({announcement}))
 const Announcement =()=>{
 	return (
 		<div className={styles.global}>
-			<div className={styles.yellow}>
-			</div>
+			<Navigation />
 			
-			<Test />
 			<div className={styles.firstArea}>
 				<div className={styles.title}>
 					Announcement
