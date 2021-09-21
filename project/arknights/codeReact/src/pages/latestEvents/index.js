@@ -5,14 +5,14 @@ import styles from './index.less';
 import newCharacter1 from '../../image/newCharacter1.jpg'
 import activity1 from '../../image/activity1.jpg'
 import defenceActivity from '../../image/defenceActivity.jpg'
+import Navigation from '../../libs/navigation/navigation.js'
 
 // @connect(({ latestEvent }) => ({ latestEvent }))
 const LatestEvent =()=>{
 
     return (
 		<div className={styles.global}>
-			<div className={styles.yellow}>
-			</div>
+			<Navigation />
 			
 			<div className={styles.titleArea}>
 				<div className={styles.title}>
