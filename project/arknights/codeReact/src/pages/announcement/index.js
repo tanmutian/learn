@@ -3,6 +3,7 @@ import {connect} from 'dva';
 import { DatePicker } from 'antd';
 import styles from './index.less';
 import announcement2 from '../../image/announcement2.jpg'
+import Test from '../../libs/test/test.js'
 
 // @connect(({announcement}) => ({announcement}))
 const Announcement =()=>{
@@ -11,7 +12,7 @@ const Announcement =()=>{
 			<div className={styles.yellow}>
 			</div>
 			
-			
+			<Test />
 			<div className={styles.firstArea}>
 				<div className={styles.title}>
 					Announcement

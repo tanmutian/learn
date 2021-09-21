@@ -7,6 +7,7 @@ import longMen from '../../image/longMen.png'
 import rhineLab from '../../image/rhineLab.png'
 import penguinLogistics from '../../image/penguinLogistics.png'
 import { history } from 'umi';
+import Test from '../../libs/test/test.js';
 
 //@connect(({characterMain}) => ({characterMain}))
 const CharacterMain =()=>{
@@ -91,7 +92,7 @@ const CharacterMain =()=>{
                     </div>
                 </Dropdown> 
             </div>
-            
+            <Test />
             <div className={styles.area1}>
                 <div className={styles.picture1}>
                     <img className={styles.pictureArea1} src={rhodesIland} />
