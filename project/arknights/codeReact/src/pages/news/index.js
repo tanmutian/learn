@@ -3,14 +3,14 @@ import {connect} from 'dva';
 import { DatePicker } from 'antd';
 import styles from './index.less';
 import notice from '../../image/notice.png'
+import Navigation from '../../libs/navigation/navigation.js'
     
 // @connect(({ news }) => ({ news }))
 const News =()=>{
 
     return (
 		<div className={styles.global1}>
-			<div className={styles.yellow}>
-			</div>
+			<Navigation />
 			
 			
 			<div className={styles.global2}>

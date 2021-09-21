@@ -7,14 +7,14 @@ import amiya from '../../image/amiya.png';
 import kaltsit from '../../image/kaltsit.png';
 import blaze from '../../image/blaze.png';
 import rosmontis from '../../image/rosmontis.png';
+import Navigation from '../../libs/navigation/navigation.js'
 
 // @connect(({ rhodesIland }) => ({ rhodesIland }))
 const rhodesIland =()=>{
 
     return (
         <div className={styles.global}>
-            <div className={styles.yellowPart}>
-            </div>
+            <Navigation />
 
             <div className={styles.contentMain}>
                 <Carousel autoplay>
