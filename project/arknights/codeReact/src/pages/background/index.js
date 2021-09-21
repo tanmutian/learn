@@ -8,14 +8,14 @@ import mortalCity from '../../image/mortalCity.jpg'
 import infected from '../../image/infected.jpg'
 import originiumArt from '../../image/originiumArt.jpg'
 import rhodesLand from '../../image/rhodesLand.jpg'
+import Navigation from '../../libs/navigation/navigation.js'
 
 //@connect(({background}) => ({background}))
 const Background =()=>{
 
 	return (
 		<div className={styles.global}>
-			<div className={styles.yellow}>
-			</div>
+			<Navigation />
 			
 			
 			<div className={styles.titleArea}>
