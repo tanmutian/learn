@@ -7,14 +7,14 @@ import getCharater2 from '../../image/getCharater2.jpg'
 import clothes1 from '../../image/clothes1.jpg'
 import clothes2 from '../../image/clothes2.jpg'
 import miningArea from '../../image/miningArea.jpg'
+import Navigation from '../../libs/navigation/navigation.js'
     
 // @connect(({ eventDetail }) => ({ eventDetail }))
 const EventDetail =()=>{
 
     return (
 		<div className={styles.global}>
-			<div className={styles.yellowPart}>
-			</div>
+			<Navigation />
 			
 			<div className={styles.activityName}>
 				Second anniversary celebration event
