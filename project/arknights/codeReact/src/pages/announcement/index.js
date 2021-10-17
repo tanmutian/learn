@@ -4,6 +4,7 @@ import { DatePicker } from 'antd';
 import styles from './index.less';
 import announcement2 from '../../image/announcement2.jpg'
 import Navigation from '../../libs/navigation/navigation.js'
+import Copyright from '../../libs/copyright/copyright.js'
 
 // @connect(({announcement}) => ({announcement}))
 const Announcement =()=>{
@@ -90,24 +91,8 @@ const Announcement =()=>{
 				<div className={styles.clear}>
 				</div>
 			</div>
-
-			<div className={styles.copyrightLine}>
-			</div>
 			
-			<div className={styles.copyright}>
-				<div className={styles.copyrightText}>
-					Developer: Mutian Tan
-				</div>
-				<div className={styles.copyrightText2}>
-					The present game mode: 1.5.81
-				</div>
-				<div className={styles.copyrightText3}>
-					The latest update: 17/9/2021
-				</div>
-				<div className={styles.copyrightText}>
-					loacation: 666, Xinhua Road, Changning District, Shanghai. telepone number:181-1723-5737.
-				</div>
-			</div>
+			<Copyright />
 			
 			<div className={styles.clear}>
 			</div>
