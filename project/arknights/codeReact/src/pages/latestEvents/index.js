@@ -2,6 +2,7 @@ import React,{useCallback, useMomo,useState} from 'react';
 import {connect} from 'dva';
 import { DatePicker } from 'antd';
 import styles from './index.less';
+import { history } from 'umi';
 import newCharacter1 from '../../image/newCharacter1.jpg'
 import activity1 from '../../image/activity1.jpg'
 import defenceActivity from '../../image/defenceActivity.jpg'
@@ -10,6 +11,9 @@ import Copyright from '../../libs/copyright/copyright.js'
 
 // @connect(({ latestEvent }) => ({ latestEvent }))
 const LatestEvent =()=>{
+	const historyEventDetail =()=>{
+        history.push('/eventDetail')
+    }
 
     return (
 		<div className={styles.global}>
@@ -39,7 +43,7 @@ const LatestEvent =()=>{
 					[Attack, Defence and Tactical Collide] The limited-time headhunting open  
 				</div>
 				
-				<div className={styles.outsideArea}>
+				<div className={styles.outsideArea} onClick={historyEventDetail}>
 					<div className={styles.insideArea}>
 						<div className={styles.imgArea}>
 							<img className={styles.imgStyle} src={newCharacter1}/>
