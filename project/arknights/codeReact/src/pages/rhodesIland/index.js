@@ -82,37 +82,6 @@ const rhodesIland =()=>{
                 </Carousel>
             </div>
             
-            
-            
-            
-            <div className={styles.allCharacter}>
-                <div className={styles.arrow}>
-                    arrow
-                </div>
-                
-                <div className={styles.pictureStyle}>
-                </div>
-                
-                <div className={styles.pictureStyle}>
-                </div>
-                
-                <div className={styles.pictureStyle}>
-                </div>
-                
-                <div className={styles.pictureStyle}>
-                </div>
-                
-                <div className={styles.pictureStyle}>
-                </div>
-                
-                <div className={styles.arrow}>
-                    arrow
-                </div>
-                
-                <div className={styles.clear}>
-                </div>
-            </div>
-            
             <div className={styles.clear}>
             </div>
         </div>

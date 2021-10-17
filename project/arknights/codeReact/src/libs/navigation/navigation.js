@@ -21,6 +21,10 @@ const Navigation =()=>{
     const historyRhodesIland =()=>{
         history.push('/rhodesIland')
     }
+
+    const historyBackground =()=>{
+        history.push('/background')
+    }
     
     const menuEvents = (
         <Menu>
@@ -41,6 +45,8 @@ const Navigation =()=>{
             </Menu.Item>
         </Menu>
     );
+    
+
     
     const menuCharacter = (
         <Menu>
@@ -75,7 +81,7 @@ const Navigation =()=>{
                 </div>
             </Dropdown>
 
-            <div className={styles.content2}>
+            <div className={styles.content2} onClick={historyBackground}>
                  Background
             </div>
 
