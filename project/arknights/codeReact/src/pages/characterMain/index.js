@@ -7,7 +7,8 @@ import longMen from '../../image/longMen.png'
 import rhineLab from '../../image/rhineLab.png'
 import penguinLogistics from '../../image/penguinLogistics.png'
 import { history } from 'umi';
-import Navigation from '../../libs/navigation/navigation.js';
+import Navigation from '../../libs/navigation/navigation.js'
+import Copyright from '../../libs/copyright/copyright.js'
 
 //@connect(({characterMain}) => ({characterMain}))
 const CharacterMain =()=>{
@@ -62,6 +63,8 @@ const CharacterMain =()=>{
                     <img className={styles.pictureArea4} src={penguinLogistics} />
                 </div>
             </div>
+
+            <Copyright />
 
             <div className={styles.clear}>
             </div>

@@ -8,6 +8,7 @@ import kaltsit from '../../image/kaltsit.png';
 import blaze from '../../image/blaze.png';
 import rosmontis from '../../image/rosmontis.png';
 import Navigation from '../../libs/navigation/navigation.js'
+import Copyright from '../../libs/copyright/copyright.js'
 
 // @connect(({ rhodesIland }) => ({ rhodesIland }))
 const rhodesIland =()=>{
@@ -81,6 +82,8 @@ const rhodesIland =()=>{
                     </div>
                 </Carousel>
             </div>
+
+            <Copyright />
             
             <div className={styles.clear}>
             </div>

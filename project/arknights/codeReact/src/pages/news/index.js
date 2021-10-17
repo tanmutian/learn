@@ -4,6 +4,7 @@ import { DatePicker } from 'antd';
 import styles from './index.less';
 import notice from '../../image/notice.png'
 import Navigation from '../../libs/navigation/navigation.js'
+import Copyright from '../../libs/copyright/copyright.js'
     
 // @connect(({ news }) => ({ news }))
 const News =()=>{
@@ -99,6 +100,8 @@ const News =()=>{
 				<div className={styles.clear}>
 				</div>
 			</div>
+
+			<Copyright />
 			
 			<div className={styles.clear}>
 			</div>

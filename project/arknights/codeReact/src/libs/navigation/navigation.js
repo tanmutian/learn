@@ -25,6 +25,10 @@ const Navigation =()=>{
     const historyBackground =()=>{
         history.push('/background')
     }
+
+    const historyCharacterMain =()=>{
+        history.push('/characterMain')
+    }
     
     const menuEvents = (
         <Menu>
@@ -85,7 +89,7 @@ const Navigation =()=>{
                  Background
             </div>
 
-            <Dropdown overlay={menuCharacter} placement="bottomCenter">
+            <Dropdown overlay={menuCharacter} placement="bottomCenter" onClick={historyCharacterMain}>
                 <div className={styles.content2}>
                     Operator data
                 </div>

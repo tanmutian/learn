@@ -8,6 +8,7 @@ import clothes1 from '../../image/clothes1.jpg'
 import clothes2 from '../../image/clothes2.jpg'
 import miningArea from '../../image/miningArea.jpg'
 import Navigation from '../../libs/navigation/navigation.js'
+import Copyright from '../../libs/copyright/copyright.js'
     
 // @connect(({ eventDetail }) => ({ eventDetail }))
 const EventDetail =()=>{
@@ -206,6 +207,8 @@ const EventDetail =()=>{
 				<div className={styles.clear}>
 				</div>
 			</div>
+
+			<Copyright />
 			
 			<div className={styles.clear}>
 			</div>

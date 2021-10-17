@@ -6,6 +6,7 @@ import newCharacter1 from '../../image/newCharacter1.jpg'
 import activity1 from '../../image/activity1.jpg'
 import defenceActivity from '../../image/defenceActivity.jpg'
 import Navigation from '../../libs/navigation/navigation.js'
+import Copyright from '../../libs/copyright/copyright.js'
 
 // @connect(({ latestEvent }) => ({ latestEvent }))
 const LatestEvent =()=>{
@@ -206,6 +207,8 @@ const LatestEvent =()=>{
 				<div className={styles.clear}>
 				</div>
 			</div>
+
+			<Copyright />
 			
 			<div className={styles.clear}>
 			</div>

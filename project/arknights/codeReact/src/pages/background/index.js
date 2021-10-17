@@ -9,6 +9,7 @@ import infected from '../../image/infected.jpg'
 import originiumArt from '../../image/originiumArt.jpg'
 import rhodesLand from '../../image/rhodesLand.jpg'
 import Navigation from '../../libs/navigation/navigation.js'
+import Copyright from '../../libs/copyright/copyright.js'
 
 //@connect(({background}) => ({background}))
 const Background =()=>{
@@ -65,6 +66,8 @@ const Background =()=>{
 				<div className={styles.clear}>
 				</div>
 			</div>
+
+			<Copyright />
 			
 			<div className={styles.clear}>
 			</div>
