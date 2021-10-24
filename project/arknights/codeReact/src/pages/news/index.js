@@ -5,6 +5,7 @@ import styles from './index.less';
 import notice from '../../image/notice.png'
 import Navigation from '../../libs/navigation/navigation.js'
 import Copyright from '../../libs/copyright/copyright.js'
+import Account from '../../libs/account/account.js'
     
 // @connect(({ news }) => ({ news }))
 const News =()=>{
@@ -13,6 +14,7 @@ const News =()=>{
 		<div className={styles.global1}>
 			<Navigation />
 			
+			<Account />
 			
 			<div className={styles.global2}>
 				<div className={styles.title}>

@@ -5,12 +5,16 @@ import styles from './index.less';
 import announcement2 from '../../image/announcement2.jpg'
 import Navigation from '../../libs/navigation/navigation.js'
 import Copyright from '../../libs/copyright/copyright.js'
+import Account from '../../libs/account/account.js'
+
 
 // @connect(({announcement}) => ({announcement}))
 const Announcement =()=>{
 	return (
 		<div className={styles.global}>
 			<Navigation />
+
+			<Account />
 			
 			<div className={styles.firstArea}>
 				<div className={styles.title}>

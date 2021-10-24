@@ -10,6 +10,7 @@ import originiumArt from '../../image/originiumArt.jpg'
 import rhodesLand from '../../image/rhodesLand.jpg'
 import Navigation from '../../libs/navigation/navigation.js'
 import Copyright from '../../libs/copyright/copyright.js'
+import Account from '../../libs/account/account.js'
 
 //@connect(({background}) => ({background}))
 const Background =()=>{
@@ -17,6 +18,8 @@ const Background =()=>{
 	return (
 		<div className={styles.global}>
 			<Navigation />
+
+			<Account />
 			
 			
 			<div className={styles.titleArea}>

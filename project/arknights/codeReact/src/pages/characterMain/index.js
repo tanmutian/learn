@@ -9,6 +9,7 @@ import penguinLogistics from '../../image/penguinLogistics.png'
 import { history } from 'umi';
 import Navigation from '../../libs/navigation/navigation.js'
 import Copyright from '../../libs/copyright/copyright.js'
+import Account from '../../libs/account/account.js'
 
 //@connect(({characterMain}) => ({characterMain}))
 const CharacterMain =()=>{
@@ -18,6 +19,9 @@ const CharacterMain =()=>{
     return (
         <div className={styles.global}>
             <Navigation />
+
+            <Account />
+
             <div className={styles.area1}>
                 <div className={styles.picture1}>
                     <img className={styles.pictureArea1} src={rhodesIland} />

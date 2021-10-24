@@ -8,6 +8,7 @@ import activity1 from '../../image/activity1.jpg'
 import defenceActivity from '../../image/defenceActivity.jpg'
 import Navigation from '../../libs/navigation/navigation.js'
 import Copyright from '../../libs/copyright/copyright.js'
+import Account from '../../libs/account/account.js'
 
 // @connect(({ latestEvent }) => ({ latestEvent }))
 const LatestEvent =()=>{
@@ -18,6 +19,8 @@ const LatestEvent =()=>{
     return (
 		<div className={styles.global}>
 			<Navigation />
+
+			<Account />
 			
 			<div className={styles.titleArea}>
 				<div className={styles.title}>

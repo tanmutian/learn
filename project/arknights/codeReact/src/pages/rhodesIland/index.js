@@ -9,6 +9,7 @@ import blaze from '../../image/blaze.png';
 import rosmontis from '../../image/rosmontis.png';
 import Navigation from '../../libs/navigation/navigation.js'
 import Copyright from '../../libs/copyright/copyright.js'
+import Account from '../../libs/account/account.js'
 
 // @connect(({ rhodesIland }) => ({ rhodesIland }))
 const rhodesIland =()=>{
@@ -16,6 +17,8 @@ const rhodesIland =()=>{
     return (
         <div className={styles.global}>
             <Navigation />
+
+            <Account />
 
             <div className={styles.contentMain}>
                 <Carousel autoplay>

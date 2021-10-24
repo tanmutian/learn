@@ -9,6 +9,7 @@ import clothes2 from '../../image/clothes2.jpg'
 import miningArea from '../../image/miningArea.jpg'
 import Navigation from '../../libs/navigation/navigation.js'
 import Copyright from '../../libs/copyright/copyright.js'
+import Account from '../../libs/account/account.js'
     
 // @connect(({ eventDetail }) => ({ eventDetail }))
 const EventDetail =()=>{
@@ -16,6 +17,8 @@ const EventDetail =()=>{
     return (
 		<div className={styles.global}>
 			<Navigation />
+
+			<Account />
 			
 			<div className={styles.activityName}>
 				Second anniversary celebration event
