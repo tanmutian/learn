@@ -31,53 +31,17 @@ const Announcement =()=>{
 			/>
 			
 
+			<AnnouncementListItem
+				topDate={"March 09, 2021"}
+				bottomLeftImg={announcement2}
+				bottomRightText={"Repair instructions for abnormal conditions on March 09"}
+			/>
 			
-			<div className={styles.area}>
-				<div className={styles.textStyle}>
-					March 09, 2021
-				</div>
-			
-				<div className={styles.line}>
-				</div>
-				
-				<div className={styles.outside}>
-				
-					<img className={styles.imgStyle} src={announcement2}/>
-					
-					<div className={styles.description}>
-						Repair instructions for abnormal conditions on March 09
-					</div>
-					
-					<div className={styles.clear}>
-					</div>
-					
-				</div>
-				
-				
-				<div className={styles.clear}>
-				</div>
-			</div>
-			
-			<div className={styles.area}>
-			
-				
-				<div className={styles.followOutside}>
-				
-					<img className={styles.imgStyle} src={announcement2}/>
-					
-					<div className={styles.description}>
-						Downtime maintenance for the new version
-					</div>
-					
-					<div className={styles.clear}>
-					</div>
-					
-				</div>
-				
-				
-				<div className={styles.clear}>
-				</div>
-			</div>
+			<AnnouncementListItem 
+				topDate={"March 09, 2021"}
+				bottomLeftImg={announcement2}
+				bottomRightText={"Downtime maintenance for the new version"}
+			/>
 			
 			<Copyright />
 			
