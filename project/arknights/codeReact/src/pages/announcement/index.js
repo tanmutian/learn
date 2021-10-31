@@ -6,6 +6,7 @@ import announcement2 from '../../image/announcement2.jpg'
 import Navigation from '../../libs/navigation/navigation.js'
 import Copyright from '../../libs/copyright/copyright.js'
 import Account from '../../libs/account/account.js'
+import AnnouncementListItem from '../../libs/AnnouncementListItem/AnnouncementListItem.js'
 
 
 // @connect(({announcement}) => ({announcement}))
@@ -15,39 +16,21 @@ const Announcement =()=>{
 			<Navigation />
 
 			<Account />
-			
+						
+
 			<div className={styles.firstArea}>
 				<div className={styles.title}>
 					Announcement
 				</div>
 			</div>
 			
-			<div className={styles.area}>
-				<div className={styles.textStyle}>
-					March 16, 2021
-				</div>
+			<AnnouncementListItem 
+				topDate={"March 16, 2021"} 
+				bottomLeftImg={announcement2} 
+				bottomRightText={"Flash update announcement on March 16"}
+			/>
 			
-				<div className={styles.line}>
-				</div>
-				
-				<div className={styles.outside}>
-				
-					<img className={styles.imgStyle} src={announcement2}/>
-					
-					
-					<div className={styles.description}>
-						Flash update announcement on March 16
-					</div>
-					
-					<div className={styles.clear}>
-					</div>
-					
-				</div>
-				
-				
-				<div className={styles.clear}>
-				</div>
-			</div>
+
 			
 			<div className={styles.area}>
 				<div className={styles.textStyle}>

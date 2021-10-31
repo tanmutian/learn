@@ -3,11 +3,11 @@ import { connect } from 'dva';
 import styles from './AnnouncementListItem.less';
 import announcement2 from '../../image/announcement2.jpg'
 
-const AnnouncementListItem =()=>{
+const AnnouncementListItem =({topDate,bottomLeftImg,bottomRightText})=>{
     return (
         <div className={styles.area}>
             <div className={styles.textStyle}>
-                March 16, 2021
+                {topDate}
             </div>
                     
             <div className={styles.line}>
@@ -15,11 +15,11 @@ const AnnouncementListItem =()=>{
                         
             <div className={styles.outside}>
                         
-                <img className={styles.imgStyle} src={announcement2}/>
+                <img className={styles.imgStyle} src={bottomLeftImg}/>
                             
                             
                 <div className={styles.description}>
-                    Flash update announcement on March 16
+                    {bottomRightText}
                 </div>
                             
                 <div className={styles.clear}>
