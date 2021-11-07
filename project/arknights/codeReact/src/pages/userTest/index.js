@@ -8,18 +8,26 @@ import styles from './index.less';
 
 // @connect(({ user }) => ({ user }))
 const User =()=>{
-    const[firstTest, setFirstTest]=useState(200);
-    const onClickButton =()=>{
-        let newTest=firstTest-10;
-        setFirstTest(newTest)
+    const[boolean, setBoolean]=useState(true);
+    const[String, setString]=useState('a');
+    const[array, setArray]=useState([{
+       name:'张三',
+       age:'17' 
+    }]);
+    const firstButton =()=>{
+        if(boolean){
+            let newBoolean = false;
+        }else{
+            let newBoolean =true;
+        }
+        setBoolean(newBoolean)
     }
-    
     return (
         <div>
-            <div style={{fontSize:'30px'}}>
-                {firstTest}
+            <div>
+                {boolean}
             </div>
-            <div className={styles.button} onClick={onClickButton}>
+            <div className={styles.button} onClick={firstButton}>
                 CLICK ME!
             </div>
         </div>

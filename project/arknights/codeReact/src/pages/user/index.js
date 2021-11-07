@@ -18,6 +18,14 @@ const User =()=>{
         <div> 
             <div>
                 {test}
+                {/* （1）初始状态时true，点击按钮，将该状态改成false
+                （2）初始状态是字符串a，点击按钮，再a的后面加一个a
+                （3）初始状态是数组
+                        [{
+                            name:'张三',
+                            age:16,
+                        }]
+                        点击按钮，往数组里面新增一项，值随意 */}
             </div>  
             <div className={styles.button} onClick={onClickButton}> 
             </div>
