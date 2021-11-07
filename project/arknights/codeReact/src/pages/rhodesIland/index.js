@@ -10,6 +10,7 @@ import rosmontis from '../../image/rosmontis.png';
 import Navigation from '../../libs/navigation/navigation.js'
 import Copyright from '../../libs/copyright/copyright.js'
 import Account from '../../libs/account/account.js'
+import RhodesIslandList from '../../libs/RhodesIsland/RhodesIslandList.js'
 
 // @connect(({ rhodesIland }) => ({ rhodesIland }))
 const rhodesIland =()=>{
@@ -22,67 +23,67 @@ const rhodesIland =()=>{
 
             <div className={styles.contentMain}>
                 <Carousel autoplay>
-                    <div className={styles.contentStyle}>
-                        <div className={styles.text}>
-                        The leader of the rhodesIland, with the highest executive power. 
-                        Although,she outwardly seemed only an immature girl, in fact, she is a trusted and qualified leader.
-                        Now, amiya is leading the rhodesIland fighting for the future of the infected and for the world getting rid of the affection of the orginuium disease.
-                        </div>
+                    <RhodesIslandList 
+                        text = {"The leader of the rhodesIland, with the highest executive power. Although,she outwardly seemed only an immature girl, in fact, she is a trusted and qualified leader.Now, amiya is leading the rhodesIland fighting for the future of the infected and for the world getting rid of the affection of the orginuium disease."}
+                        img = {amiya}
+                        pictureArea = {{
+                            width:'300px',
+                            height:'400px',
+                            marginLeft:'50px'
+                        }}
+                        logoArea = {{
+                            width:'271px',
+                            height:'254px'
+                        }}
+                        logo = {rhodesIsland}
+                    />
+                    
+                    <RhodesIslandList 
+                        text = {"Kaltsit, one of the senior management and the leader of the medical project of the rhodesIland. She has profound knowledge in many fields of study and work as a medical staff provided some medical theories and machines in some missions.Also, she will work as an improtant member of the command of the rhodesIland in each projects."}
+                        img = {kaltsit}
+                        pictureArea = {{
+                            width:'225px',
+                            height:'400px',
+                            marginLeft:'87px'
+                        }}
+                        logoArea = {{
+                            width:'271px',
+                            height:'254px'
+                        }}
+                        logo = {rhodesIsland}
+                    />
+                    
+                    
+                    <RhodesIslandList 
+                        text = {"Blaze, elite operator of the rhodesIland, she has demonstrated professional combat skills and combat accomplishment in various battles.Now, leading by amiya, acting as a key member of the elite team. "}
+                        img = {blaze}
+                        pictureArea = {{
+                            width:'200px',
+                            height:'400px',
+                            marginLeft:'100px'
+                        }}
+                        logoArea = {{
+                            width:'271px',
+                            height:'254px'
+                        }}
+                        logo = {rhodesIsland}
+                    />
+                    
 
-                        <div className={styles.centralPicture}>
-                            <img  className={styles.pictureArea} src={amiya}/>
-                        </div> 
-                        
-                        <div className={styles.logoStyle}>
-                            <img className={styles.imgArea} src={rhodesIsland} />
-                        </div>
-                    </div>
-
-                    <div className={styles.contentStyle}>
-                        <div className={styles.text}>
-                        Kaltsit, one of the senior management and the leader of the medical project of the rhodesIland. 
-                        She has profound knowledge in many fields of study and work as a medical staff provided some medical theories and machines in some missions.
-                        Also, she will work as an improtant member of the command of the rhodesIland in each projects.
-                        </div>
-
-                        <div className={styles.centralPicture}>
-                            <img  className={styles.pictureArea3} src={kaltsit}/>
-                        </div> 
-                        
-                        <div className={styles.logoStyle}>
-                            <img className={styles.imgArea} src={rhodesIsland} />
-                        </div>
-                    </div>
-
-                    <div className={styles.contentStyle}>
-                        <div className={styles.text}>
-                        Blaze, elite operator of the rhodesIland, she has demonstrated professional combat skills and combat accomplishment in various battles.
-                        Now, leading by amiya, acting as a key member of the elite team. 
-                        </div>
-
-                        <div className={styles.centralPicture}>
-                            <img  className={styles.pictureArea2} src={blaze}/>
-                        </div> 
-                        
-                        <div className={styles.logoStyle}>
-                            <img className={styles.imgArea} src={rhodesIsland} />
-                        </div>
-                    </div>
-                    <div className={styles.contentStyle}>
-                    <div className={styles.text}>
-                            Rosmontis, elite operator of the rhodesIland, master the use of extremely rare originium art which used to fighting with huge object.
-                            She shows great battlefield control and tactical value in various battles.
-                            Now is leading by kaltsit, acting as the core promoter of the annihilation.
-                        </div>
-
-                        <div className={styles.centralPicture}>
-                            <img  className={styles.pictureArea4} src={rosmontis}/>
-                        </div> 
-                        
-                        <div className={styles.logoStyle}>
-                            <img className={styles.imgArea} src={rhodesIsland} />
-                        </div>
-                    </div>
+                    <RhodesIslandList 
+                        text = {"Rosmontis, elite operator of the rhodesIland, master the use of extremely rare originium art which used to fighting with huge object.She shows great battlefield control and tactical value in various battles.Now is leading by kaltsit, acting as the core promoter of the annihilation."}
+                        img = {rosmontis}
+                        pictureArea = {{
+                            width:'245px',
+                            height:'400px',
+                            marginLeft:'77px'
+                        }}
+                        logoArea = {{
+                            width:'271px',
+                            height:'254px'
+                        }}
+                        logo = {rhodesIsland}
+                    />
                 </Carousel>
             </div>
 
