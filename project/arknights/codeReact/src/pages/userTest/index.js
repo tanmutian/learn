@@ -8,17 +8,30 @@ import styles from './index.less';
 
 // @connect(({ user }) => ({ user }))
 const User =()=>{
-    const[stringTest, setStringTest]=useState(['a']);
-    const firstButton =()=>{
-        let stringArray=[...stringTest];
-        stringArray.push('a');
-        setStringTest(stringArray);
+    const [arrayTest, setArrayTest]=useState([{
+        name : '1',
+        no : 1
+    }]);
+    const [theAnswer, setTheAnswer]=useState(arrayTest[0].name);
+    const firstButton =()=>{        
+        let valueFormed = Math.random();
+        let newValue = {
+            name : valueFormed,
+            no : arrayTest.length+1
+        }
+        let newArrayTest=[...arrayTest];
+        newArrayTest.push(newValue);
+        setArrayTest(newArrayTest);
+        let answer='';
+        for(let i=0;i<newArrayTest.length;i++){
+            answer=answer+newArrayTest[i].name+',';
+        }
+        setTheAnswer(answer);
     }
-    console.log(stringTest);
     return (
         <div>
             <div>
-                {stringTest.join('')}
+                {theAnswer}
             </div>
             <div className={styles.button} onClick={firstButton}>
                 CLICK ME!
