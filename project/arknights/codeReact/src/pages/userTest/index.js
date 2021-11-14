@@ -8,17 +8,17 @@ import styles from './index.less';
 
 // @connect(({ user }) => ({ user }))
 const User =()=>{
-    const[stringTest, setStringTest]=useState('a');
+    const[stringTest, setStringTest]=useState(['a']);
     const firstButton =()=>{
-        let stringArray=[stringTest];
+        let stringArray=[...stringTest];
         stringArray.push('a');
-        let newString=stringArray.join('');
-        setStringTest(newString);
+        setStringTest(stringArray);
     }
+    console.log(stringTest);
     return (
         <div>
             <div>
-                {stringTest}
+                {stringTest.join('')}
             </div>
             <div className={styles.button} onClick={firstButton}>
                 CLICK ME!
