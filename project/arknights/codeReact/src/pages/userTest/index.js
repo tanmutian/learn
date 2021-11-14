@@ -8,20 +8,17 @@ import styles from './index.less';
 
 // @connect(({ user }) => ({ user }))
 const User =()=>{
-    const[booleanTest, setBooleanTest]=useState(true);
+    const[stringTest, setStringTest]=useState('a');
     const firstButton =()=>{
-        let newBoolean;
-        if(booleanTest){
-            newBoolean = false;
-        }else{
-            newBoolean =true;
-        }
-        setBooleanTest(newBoolean);
+        let stringArray=[stringTest];
+        stringArray.push('a');
+        let newString=stringArray.join('');
+        setStringTest(newString);
     }
     return (
         <div>
             <div>
-                {booleanTest.toString()}
+                {stringTest}
             </div>
             <div className={styles.button} onClick={firstButton}>
                 CLICK ME!
