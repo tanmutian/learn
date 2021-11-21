@@ -8,60 +8,143 @@ import styles from './index.less';
 
 // @connect(({ user }) => ({ user }))
 const User =()=>{
-    const [arrayTest, setArrayTest]=useState([{
-        name: 'Tony',
-        highestRank: 'Gold-4',
-        presentRank:'Gold-2',
-        job: 'leader and commander'
-    },{
-        name: 'Victor',
-        highestRank: 'Gold-3',
-        presentRank:'Gold-2',
-        job: 'break through'
-    },{
-        name: 'Steven',
-        highestRank: 'Gold-2',
-        presentRank:'Gold-1',
-        job: 'free man and scondary sniper'
-    },{
-        name: 'Henry',
-        highestRank: 'Gold-4',
-        presentRank:'Gold-1',
-        job: 'primary sniper'
-    },{
-        name: 'Eric',
-        highestRank: 'Gold-1',
-        presentRank:'Silver-Elite',
-        job: 'break through'
-    }]);
-    const [sentence, setSentence]=useState([
-        'The name of the team member is: ',
-        'The highest rank he reached was: ',
-        'The present rank of him is: ',
-        'The job he does in the team is: '
-    ])
-    const [theAnswer, setTheAnswer]=useState('');
-    const [count, setCount]=useState(0);
-    const firstButton =()=>{        
-        let firstSentence=sentence[0]+arrayTest[count].name+'. ';
-        let secondSentence=sentence[1]+arrayTest[count].highestRank+'. ';
-        let thirdSentence=sentence[2]+arrayTest[count].presentRank+'. ';
-        let forthSentence=sentence[3]+arrayTest[count].job+'. ';
-        let newAnswer= firstSentence+secondSentence+thirdSentence+forthSentence;
-        setTheAnswer(newAnswer);
-        if(count==4){
-            setCount(0);
-        }else{
-            setCount(count+1);
-        }      
-    }
+
     return (
-        <div>
-            <div className={styles.text}>
-                {theAnswer}
+        <div className={styles.global}>
+            <div className={styles.totalArea}>
+                <div className={styles.Section}>
+                    <div className={styles.nameTag}>
+                        Name
+                    </div>
+                    <div className={styles.name}>
+                        Tony
+                    </div>  
+                    <div className={styles.clear}>
+                    </div>
+                </div>
+
+                <div className={styles.Section}>
+                    <div className={styles.rank}>
+                        Highest Rank
+                    </div>
+                    <div className={styles.rank}>
+                        Gold-4
+                    </div>
+                    <div className={styles.rank}>
+                        Present Rank
+                    </div>
+                    <div className={styles.rank}>
+                        Gold-2
+                    </div>
+                    <div className={styles.clear}>
+                    </div>
+                </div>
+
+                <div className={styles.Section}>
+                    <div className={styles.jobTag}>
+                        Job
+                    </div>
+                    <div className={styles.job}>
+                        Leader and Commander
+                    </div> 
+                    <div className={styles.clear}>
+                    </div>
+                </div>
+
+                <div className={styles.clear}>
+                </div>
             </div>
-            <div className={styles.button} onClick={firstButton}>
-                CLICK ME!
+
+            <div className={styles.totalArea}>
+                <div className={styles.Section}>
+                    <div className={styles.nameTag}>
+                        Name
+                    </div>
+                    <div className={styles.name}>
+                        Victor
+                    </div>  
+                    <div className={styles.clear}>
+                    </div>
+                </div>
+
+                <div className={styles.Section}>
+                    <div className={styles.rank}>
+                        Highest Rank
+                    </div>
+                    <div className={styles.rank}>
+                        Gold-3
+                    </div>
+                    <div className={styles.rank}>
+                        Present Rank
+                    </div>
+                    <div className={styles.rank}>
+                        Gold-1
+                    </div>
+                    <div className={styles.clear}>
+                    </div>
+                </div>
+
+                <div className={styles.Section}>
+                    <div className={styles.jobTag}>
+                        Job
+                    </div>
+                    <div className={styles.job}>
+                        Striker
+                    </div> 
+                    <div className={styles.clear}>
+                    </div>
+                </div>
+
+                <div className={styles.clear}>
+                </div>
+            </div>
+
+
+            <div className={styles.totalArea}>
+                <div className={styles.Section}>
+                    <div className={styles.nameTag}>
+                        Name
+                    </div>
+                    <div className={styles.name}>
+                        Steven
+                    </div>  
+                    <div className={styles.clear}>
+                    </div>
+                </div>
+
+                <div className={styles.Section}>
+                    <div className={styles.rank}>
+                        Highest Rank
+                    </div>
+                    <div className={styles.rank}>
+                        Gold-2
+                    </div>
+                    <div className={styles.rank}>
+                        Present Rank
+                    </div>
+                    <div className={styles.rank}>
+                        Gold-1
+                    </div>
+                    <div className={styles.clear}>
+                    </div>
+                </div>
+
+                <div className={styles.Section}>
+                    <div className={styles.jobTag}>
+                        Job
+                    </div>
+                    <div className={styles.job}>
+                        Free man and Secondary Sniper
+                    </div> 
+                    <div className={styles.clear}>
+                    </div>
+                </div>
+
+                <div className={styles.clear}>
+                    </div>
+            </div>
+            
+            <div className={styles.clear}>
             </div>
         </div>
 
