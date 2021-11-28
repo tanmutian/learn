@@ -9,14 +9,14 @@ import styles from './index.less';
 // @connect(({ user }) => ({ user }))
 const User =()=>{
 
-    const [test,setTest]=useState(50);
+    const [test,setTest]=useState('a');
     const OnClick =()=>{
-        let newTest=test+1;
+        let newTest=test+'a';
         setTest(newTest);
     }
     
     const getFunctionReturnNumber =()=>{
-        let myReturn=test+100;
+        let myReturn=test+'b';
         return myReturn
     }
 

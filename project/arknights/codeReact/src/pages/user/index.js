@@ -8,13 +8,13 @@ import styles from './index.less';
 
 // @connect(({ user }) => ({ user }))
 const User =()=>{
-    const [test,setTest]=useState(100);
+    const [test,setTest]=useState('a');
     const onClickButton=()=>{
-        let newTest=test+1;
+        let newTest=test+'a';
         setTest(newTest);
     }
-    const getFunctionReturnNumber=()=>{
-        let myReturn =test+100;
+    const getFunctionReturnString=()=>{
+        let myReturn =test+'b';
         return myReturn
     }
     
@@ -24,7 +24,7 @@ const User =()=>{
                 {test}
             </div> 
             <div>
-                {getFunctionReturnNumber()}
+                {getFunctionReturnString()}
            </div> 
             <div className={styles.button} onClick={onClickButton}> 
             </div>
