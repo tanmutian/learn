@@ -5,7 +5,7 @@ import { SearchOutlined } from '@ant-design/icons'
 import { PoweroffOutlined } from '@ant-design/icons'
 import styles from './userTestList.less';
 
-const UserTestList =({name,highestRank,presentRank,job})=>{
+const UserTestList =({name,highestRank,presentRank,job,jobStyle,jobTagStyle})=>{
     return (
         <div className={styles.totalArea}>
             <div className={styles.Section}>
@@ -37,10 +37,10 @@ const UserTestList =({name,highestRank,presentRank,job})=>{
             </div>
 
             <div className={styles.Section}>
-                <div className={styles.jobTag}>
+                <div style={jobTagStyle}>
                     Job
                 </div>
-                <div className={styles.job}>
+                <div style={jobStyle}>
                     {job}
                 </div> 
                 <div className={styles.clear}>
