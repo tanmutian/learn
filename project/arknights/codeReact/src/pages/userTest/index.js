@@ -27,10 +27,10 @@ const User =()=>{
                     <div className={styles.rank}>
                         Highest Rank
                     </div>
-                    <div className={styles.rank}>
+                    <div className={styles.rank2}>
                         Gold-4
                     </div>
-                    <div className={styles.rank}>
+                    <div className={styles.rank3}>
                         Present Rank
                     </div>
                     <div className={styles.rank}>
@@ -71,10 +71,10 @@ const User =()=>{
                     <div className={styles.rank}>
                         Highest Rank
                     </div>
-                    <div className={styles.rank}>
+                    <div className={styles.rank2}>
                         Gold-3
                     </div>
-                    <div className={styles.rank}>
+                    <div className={styles.rank3}>
                         Present Rank
                     </div>
                     <div className={styles.rank}>
@@ -116,10 +116,10 @@ const User =()=>{
                     <div className={styles.rank}>
                         Highest Rank
                     </div>
-                    <div className={styles.rank}>
+                    <div className={styles.rank2}>
                         Gold-2
                     </div>
-                    <div className={styles.rank}>
+                    <div className={styles.rank3}>
                         Present Rank
                     </div>
                     <div className={styles.rank}>
@@ -130,10 +130,10 @@ const User =()=>{
                 </div>
 
                 <div className={styles.Section}>
-                    <div className={styles.jobTag}>
+                    <div className={styles.jobTag2}>
                         Job
                     </div>
-                    <div className={styles.job}>
+                    <div className={styles.job2}>
                         Free man and Secondary Sniper
                     </div> 
                     <div className={styles.clear}>
