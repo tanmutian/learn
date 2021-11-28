@@ -3,146 +3,63 @@ import { connect } from 'dva';
 import { Menu, Dropdown, Button, Space } from 'antd';
 import { SearchOutlined } from '@ant-design/icons'
 import { PoweroffOutlined } from '@ant-design/icons'
+import UserTestList from './userTestList/userTestList.js'
 import styles from './index.less';
-
 
 // @connect(({ user }) => ({ user }))
 const User =()=>{
 
     return (
         <div className={styles.global}>
-            <div className={styles.totalArea}>
-                <div className={styles.Section}>
-                    <div className={styles.nameTag}>
-                        Name
-                    </div>
-                    <div className={styles.name}>
-                        Tony
-                    </div>  
-                    <div className={styles.clear}>
-                    </div>
-                </div>
+            <UserTestList
+                name={'Tony'}
+                highestRank={'Gold-4'}
+                presentRank={'Gold-2'}
+                job={'Leader and Commander'}
+            />
 
-                <div className={styles.Section}>
-                    <div className={styles.rank}>
-                        Highest Rank
-                    </div>
-                    <div className={styles.rank2}>
-                        Gold-4
-                    </div>
-                    <div className={styles.rank3}>
-                        Present Rank
-                    </div>
-                    <div className={styles.rank}>
-                        Gold-2
-                    </div>
-                    <div className={styles.clear}>
-                    </div>
-                </div>
-
-                <div className={styles.Section}>
-                    <div className={styles.jobTag}>
-                        Job
-                    </div>
-                    <div className={styles.job}>
-                        Leader and Commander
-                    </div> 
-                    <div className={styles.clear}>
-                    </div>
-                </div>
-
-                <div className={styles.clear}>
-                </div>
-            </div>
-
-            <div className={styles.totalArea}>
-                <div className={styles.Section}>
-                    <div className={styles.nameTag}>
-                        Name
-                    </div>
-                    <div className={styles.name}>
-                        Victor
-                    </div>  
-                    <div className={styles.clear}>
-                    </div>
-                </div>
-
-                <div className={styles.Section}>
-                    <div className={styles.rank}>
-                        Highest Rank
-                    </div>
-                    <div className={styles.rank2}>
-                        Gold-3
-                    </div>
-                    <div className={styles.rank3}>
-                        Present Rank
-                    </div>
-                    <div className={styles.rank}>
-                        Gold-1
-                    </div>
-                    <div className={styles.clear}>
-                    </div>
-                </div>
-
-                <div className={styles.Section}>
-                    <div className={styles.jobTag}>
-                        Job
-                    </div>
-                    <div className={styles.job}>
-                        Striker
-                    </div> 
-                    <div className={styles.clear}>
-                    </div>
-                </div>
-
-                <div className={styles.clear}>
-                </div>
-            </div>
+            <UserTestList
+                name={'Victor'}
+                highestRank={'Gold-3'}
+                presentRank={'Gold-1'}
+                job={'Striker'}
+            />
 
 
-            <div className={styles.totalArea}>
-                <div className={styles.Section}>
-                    <div className={styles.nameTag}>
-                        Name
-                    </div>
-                    <div className={styles.name}>
-                        Steven
-                    </div>  
-                    <div className={styles.clear}>
-                    </div>
-                </div>
+            <UserTestList
+                name={'Steven'}
+                highestRank={'Gold-2'}
+                presentRank={'Gold-1'}
+                job={'Free Man and Seconday Sniper'}
+            />
 
-                <div className={styles.Section}>
-                    <div className={styles.rank}>
-                        Highest Rank
-                    </div>
-                    <div className={styles.rank2}>
-                        Gold-2
-                    </div>
-                    <div className={styles.rank3}>
-                        Present Rank
-                    </div>
-                    <div className={styles.rank}>
-                        Gold-1
-                    </div>
-                    <div className={styles.clear}>
-                    </div>
-                </div>
+            <UserTestList
+                name={'Henry'}
+                highestRank={'Gold-AK'}
+                presentRank={'Gold-1'}
+                job={'Primary Sniper'}
+            />
 
-                <div className={styles.Section}>
-                    <div className={styles.jobTag2}>
-                        Job
-                    </div>
-                    <div className={styles.job2}>
-                        Free man and Secondary Sniper
-                    </div> 
-                    <div className={styles.clear}>
-                    </div>
-                </div>
+            <UserTestList
+                name={'Eric'}
+                highestRank={'Gold-2'}
+                presentRank={'Silver-Elite'}
+                job={'Striker'}
+            />
 
-                <div className={styles.clear}>
-                    </div>
-            </div>
+            <UserTestList
+                name={'Eze'}
+                highestRank={'Silver-Elite'}
+                presentRank={'Silver-Elite'}
+                job={'Reteat covering'}
+            />
+
+            <UserTestList
+                name={'sunny'}
+                highestRank={'Silver-Elite'}
+                presentRank={'Silver-3'}
+                job={'Secondary Sniper'}
+            />
             
             <div className={styles.clear}>
             </div>
