@@ -37,10 +37,10 @@ const UserTestList =({name,highestRank,presentRank,job,jobStyle,jobTagStyle})=>{
             </div>
 
             <div className={styles.Section}>
-                <div style={jobTagStyle}>
+                <div style={jobTagStyle} className={styles.jobTag}>
                     Job
                 </div>
-                <div style={jobStyle}>
+                <div style={jobStyle} className={styles.job}>
                     {job}
                 </div> 
                 <div className={styles.clear}>
