@@ -9,8 +9,43 @@ import styles from './index.less';
 // @connect(({ user }) => ({ user }))
 const User =()=>{
 
+    const [test,setTest]=useState(50);
+    const OnClick =()=>{
+        let newTest=test+1;
+        setTest(newTest);
+    }
+    
+    const getFunctionReturnNumber =()=>{
+        let myReturn=test+100;
+        return myReturn
+    }
+
     return (
         <div className={styles.global}>
+
+            <div style={{
+                float:'left',
+                width:'200px',
+                height:'200px',
+                background:'yellow'
+            }}>
+                {test}
+            </div>
+
+            <div style={{
+                float:'left',
+                width:'200px',
+                height:'200px',
+                background:'red'
+            }}>
+                {getFunctionReturnNumber()}
+            </div>
+
+            <div className={styles.button} onClick={OnClick}>
+                CLICK ME!!!
+            </div>
+
+
             <UserTestList
                 name={'Tony'}
                 highestRank={'Gold-4'}

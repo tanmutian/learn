@@ -13,14 +13,19 @@ const User =()=>{
         let newTest=test+1;
         setTest(newTest);
     }
+    const getFunctionReturnNumber=()=>{
+        let myReturn =test+100;
+        return myReturn
+    }
     
     return (
         <div> 
             <div>
                 {test}
-                自己命题并完成，必须使用对象数组，对对象数组中的一个或者多个值在页面中进行展示。开放性
             </div> 
-            
+            <div>
+                {getFunctionReturnNumber()}
+           </div> 
             <div className={styles.button} onClick={onClickButton}> 
             </div>
         </div>
