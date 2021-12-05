@@ -8,23 +8,33 @@ import styles from './index.less';
 
 // @connect(({ user }) => ({ user }))
 const User =()=>{
-    const [test,setTest]=useState('a');
+    const [test,setTest]=useState(true);
     const onClickButton=()=>{
-        let newTest=test+'a';
+        let newTest;
+        if(test==true){
+            newTest=false;
+        }else{
+            newTest=true;
+        }
         setTest(newTest);
     }
-    const getFunctionReturnString=()=>{
-        let myReturn =test+'b';
+    const getFunctionReturnBool=()=>{
+        let myReturn;
+        if(test==true){
+            myReturn=false;
+        }else{
+            myReturn=true;
+        }
         return myReturn
     }
     
     return (
         <div> 
             <div>
-                {test}
+                test我是{test.toString()}
             </div> 
             <div>
-                {getFunctionReturnString()}
+                我是return的方法{getFunctionReturnBool().toString()}
            </div> 
             <div className={styles.button} onClick={onClickButton}> 
             </div>

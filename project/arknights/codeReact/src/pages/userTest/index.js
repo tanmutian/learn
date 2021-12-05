@@ -9,15 +9,25 @@ import styles from './index.less';
 // @connect(({ user }) => ({ user }))
 const User =()=>{
 
-    const [test,setTest]=useState('a');
+    const [test,setTest]=useState(true);
     const OnClick =()=>{
-        let newTest=test+'a';
+        let newTest;
+        if(test){
+            newTest = false
+        }else{
+            newTest = true;
+        };
         setTest(newTest);
     }
     
-    const getFunctionReturnString =()=>{
-        let myReturn=test+'b';
-        return myReturn
+    const getFunctionReturnBoolean =()=>{
+        let myReturn
+        if(test){
+            myReturn = false;
+        }else{
+            myReturn = true;
+        };
+        return myReturn;
     }
 
     return (
@@ -29,7 +39,7 @@ const User =()=>{
                 height:'200px',
                 background:'yellow'
             }}>
-                {test}
+                {test.toString()}
             </div>
 
             <div style={{
@@ -38,7 +48,7 @@ const User =()=>{
                 height:'200px',
                 background:'red'
             }}>
-                {getFunctionReturnString()}
+                {getFunctionReturnBoolean().toString()}
             </div>
 
             <div className={styles.button} onClick={OnClick}>
