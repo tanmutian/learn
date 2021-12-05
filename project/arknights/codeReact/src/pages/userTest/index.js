@@ -4,6 +4,7 @@ import { Menu, Dropdown, Button, Space } from 'antd';
 import { SearchOutlined } from '@ant-design/icons'
 import { PoweroffOutlined } from '@ant-design/icons'
 import UserTestList from './userTestList/userTestList.js'
+import UserTestListVerticle from './userTestList2/userTestListVerticle.js'
 import styles from './index.less';
 
 // @connect(({ user }) => ({ user }))
@@ -12,118 +13,95 @@ const User =()=>{
     const [test,setTest]=useState({
         name: 'Peter',
         age: 16,
+        gender: 'male',
         address: 'Shanghai'
     });
     const OnClick =()=>{
         let newTest;
+        let newGender;
+        if(test.gender=='male'){
+            newGender='female';
+        }else{
+            newGender='male';
+        };
         newTest={
-            name:test.name+'X',
-            age: test.age+1,
-            address: test.address+'n'
-        }
+            name:test.name+'a',
+            age: test.age+2,
+            gender: newGender,
+            address: test.address+'b'
+        };
         setTest(newTest);
     }
     
-    const getFunctionReturnObject =()=>{
-        let myReturn;
-        myReturn = <div className={styles.getFunctionReturnObjectClass}>
-            {test.name+'/'+test.age+'/'+test.address+'.'}
-        </div>;
-        return myReturn;
-    }
+    
 
     return (
         <div className={styles.global}>
-
-            <div style={{
-                float:'left',
-                width:'200px',
-                height:'200px',
-                background:'yellow'
-            }}>
-                {test.name}
+            <div className={styles.sectionArea}>
+                <UserTestList
+                    text = {test.name}
+                    colorStyle = {{
+                        background: 'blue',
+                        color: 'red'
+                    }}
+                />
+                <UserTestList
+                    text = {test.age}
+                    colorStyle = {{
+                        background: 'black',
+                        color: 'green'
+                    }}
+                />
+                <UserTestList
+                    text = {test.gender}
+                    colorStyle = {{
+                        background:'grey',
+                        color:  'black'
+                    }}
+                />
+                <UserTestList
+                    text = {test.address}
+                    colorStyle = {{
+                        background: 'yellow',
+                        color: 'purple'
+                    }}
+                />
             </div>
 
-            <div style={{
-                float:'left',
-                width:'200px',
-                height:'200px',
-                background:'yellow'
-            }}>
-                {test.age}
+            <div className={styles.sectionArea2}>
+                <UserTestListVerticle
+                    text = {test.address}
+                    colorStyle = {{
+                        background: 'blue',
+                        color: 'green'
+                    }}
+                />
+                <UserTestListVerticle
+                    text = {test.address}
+                    colorStyle = {{
+                        background: 'red',
+                        color: 'orange'
+                    }}
+                />
+                <UserTestListVerticle
+                    text = {test.address}
+                    colorStyle = {{
+                        background: 'black',
+                        color: 'grey'
+                    }}
+                />
+                <UserTestListVerticle
+                    text = {test.address}
+                    colorStyle = {{
+                        background: 'yellow',
+                        color: 'red'
+                    }}
+                />
             </div>
-
-            <div style={{
-                float:'left',
-                width:'200px',
-                height:'200px',
-                background:'yellow'
-            }}>
-                {test.address}
-            </div>
-
-           {getFunctionReturnObject()}
 
             <div className={styles.button} onClick={OnClick}>
-                CLICK ME!!!
+                CLICK ME !!!
             </div>
-
-
-            <UserTestList
-                name={'Tony'}
-                highestRank={'Gold-4'}
-                presentRank={'Gold-2'}
-                job={'Leader and Commander'}
-            />
-
-            <UserTestList
-                name={'Victor'}
-                highestRank={'Gold-3'}
-                presentRank={'Gold-1'}
-                job={'Striker'}
-            />
-
-
-            <UserTestList
-                name={'Steven'}
-                highestRank={'Gold-2'}
-                presentRank={'Gold-1'}
-                job={'Free Man and Seconday Sniper'}
-            />
-
-            <UserTestList
-                name={'Henry'}
-                highestRank={'Gold-AK'}
-                presentRank={'Gold-1'}
-                job={'Primary Sniper'}
-            />
-
-            <UserTestList
-                name={'Eric'}
-                highestRank={'Gold-2'}
-                presentRank={'Silver-Elite'}
-                job={'Striker'}
-            />
-
-            <UserTestList
-                name={'Eze'}
-                highestRank={'Silver-Elite'}
-                presentRank={'Silver-Elite'}
-                job={'Reteat covering'}
-            />
-
-            <UserTestList
-                name={'sunny'}
-                highestRank={'Silver-Elite'}
-                presentRank={'Silver-3'}
-                job={'Secondary Sniper'}
-                jobStyle={{
-                    borderBottom:'1px solid black',
-                }}
-                jobTagStyle={{
-                    borderBottom:'1px solid black',
-                }}
-            />
             
             <div className={styles.clear}>
             </div>

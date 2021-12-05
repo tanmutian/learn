@@ -42,6 +42,10 @@ const User =()=>{
                 {test.address}
             </div>
             {getFunctionReturnObject()}
+            有一个学生对象，包括姓名，年龄，性别是否为男，家庭地址，有一个按钮，每次点击变换数据，
+            姓名每次加字符a，年龄每次加2，性别男女转换，家庭地址每次加字符b
+            将最新对象展示在网页上，如图：
+            
             <div className={styles.button} onClick={onClickButton}> 
             </div>
         </div>

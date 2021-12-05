@@ -7,7 +7,7 @@ import styles from './userTestList.less';
 
 const UserTestList =({text,colorStyle})=>{
     return (
-        <div className={styles.horizon} style={colorStyle}>
+        <div className={styles.verticle} style={colorStyle}>
             {text}
         </div>
     )
