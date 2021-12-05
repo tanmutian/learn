@@ -15,7 +15,7 @@ const User =()=>{
         setTest(newTest);
     }
     
-    const getFunctionReturnNumber =()=>{
+    const getFunctionReturnString =()=>{
         let myReturn=test+'b';
         return myReturn
     }
@@ -38,7 +38,7 @@ const User =()=>{
                 height:'200px',
                 background:'red'
             }}>
-                {getFunctionReturnNumber()}
+                {getFunctionReturnString()}
             </div>
 
             <div className={styles.button} onClick={OnClick}>
