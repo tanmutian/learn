@@ -9,24 +9,26 @@ import styles from './index.less';
 // @connect(({ user }) => ({ user }))
 const User =()=>{
 
-    const [test,setTest]=useState(true);
+    const [test,setTest]=useState({
+        name: 'Peter',
+        age: 16,
+        address: 'Shanghai'
+    });
     const OnClick =()=>{
         let newTest;
-        if(test){
-            newTest = false
-        }else{
-            newTest = true;
-        };
+        newTest={
+            name:test.name+'X',
+            age: test.age+1,
+            address: test.address+'n'
+        }
         setTest(newTest);
     }
     
-    const getFunctionReturnBoolean =()=>{
-        let myReturn
-        if(test){
-            myReturn = false;
-        }else{
-            myReturn = true;
-        };
+    const getFunctionReturnObject =()=>{
+        let myReturn;
+        myReturn = <div className={styles.getFunctionReturnObjectClass}>
+            {test.name+'/'+test.age+'/'+test.address+'.'}
+        </div>;
         return myReturn;
     }
 
@@ -39,17 +41,28 @@ const User =()=>{
                 height:'200px',
                 background:'yellow'
             }}>
-                {test.toString()}
+                {test.name}
             </div>
 
             <div style={{
                 float:'left',
                 width:'200px',
                 height:'200px',
-                background:'red'
+                background:'yellow'
             }}>
-                {getFunctionReturnBoolean().toString()}
+                {test.age}
             </div>
+
+            <div style={{
+                float:'left',
+                width:'200px',
+                height:'200px',
+                background:'yellow'
+            }}>
+                {test.address}
+            </div>
+
+           {getFunctionReturnObject()}
 
             <div className={styles.button} onClick={OnClick}>
                 CLICK ME!!!
