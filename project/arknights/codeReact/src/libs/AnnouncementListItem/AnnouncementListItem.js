@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'dva';
-import styles from './AnnouncementListItem.less';
+import styles from './announcementListItem.less';
 import announcement2 from '../../image/announcement2.jpg'
 
 const AnnouncementListItem =({topDate,bottomLeftImg,bottomRightText})=>{

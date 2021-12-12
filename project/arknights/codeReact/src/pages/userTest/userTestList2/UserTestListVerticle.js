@@ -3,7 +3,7 @@ import { connect } from 'dva';
 import { Menu, Dropdown, Button, Space } from 'antd';
 import { SearchOutlined } from '@ant-design/icons'
 import { PoweroffOutlined } from '@ant-design/icons'
-import styles from './UserTestListVerticle.less';
+import styles from './userTestListVerticle.less';
 
 const UserTestListVerticle =({text,colorStyle})=>{
     return (

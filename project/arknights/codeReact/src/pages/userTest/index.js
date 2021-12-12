@@ -4,7 +4,7 @@ import { Menu, Dropdown, Button, Space } from 'antd';
 import { SearchOutlined } from '@ant-design/icons'
 import { PoweroffOutlined } from '@ant-design/icons'
 import UserTestList from './userTestList/userTestList.js'
-import UserTestListVerticle from './userTestList2/UserTestListVerticle.js'
+import UserTestListVerticle from './userTestList2/userTestListVerticle.js'
 import styles from './index.less';
 
 // @connect(({ user }) => ({ user }))
