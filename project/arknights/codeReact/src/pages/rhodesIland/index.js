@@ -10,7 +10,7 @@ import rosmontis from '../../image/rosmontis.png';
 import Navigation from '../../libs/navigation/navigation.js'
 import Copyright from '../../libs/copyright/copyright.js'
 import Account from '../../libs/account/account.js'
-import RhodesIslandList from '../../libs/RhodesIsland/RhodesIslandList.js'
+import RhodesIslandList from '../../libs/rhodesIsland/rhodesIslandList.js'
 
 // @connect(({ rhodesIland }) => ({ rhodesIland }))
 const rhodesIland =()=>{

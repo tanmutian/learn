@@ -6,8 +6,8 @@ import notice from '../../image/notice.png'
 import Navigation from '../../libs/navigation/navigation.js'
 import Copyright from '../../libs/copyright/copyright.js'
 import Account from '../../libs/account/account.js'
-import NewsListItem from '../../libs/newsListItem/NewsListItem.js'
-import NewsListItemRight from '../../libs/newsListItemRight/NewsListItemRight.js'
+import NewsListItem from '../../libs/newsListItem/newsListItem.js'
+import NewsListItemRight from '../../libs/newsListItemRight/newsListItemRight.js'
     
 // @connect(({ news }) => ({ news }))
 const News =()=>{

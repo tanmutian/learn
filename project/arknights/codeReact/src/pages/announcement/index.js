@@ -6,7 +6,7 @@ import announcement2 from '../../image/announcement2.jpg'
 import Navigation from '../../libs/navigation/navigation.js'
 import Copyright from '../../libs/copyright/copyright.js'
 import Account from '../../libs/account/account.js'
-import AnnouncementListItem from '../../libs/AnnouncementListItem/AnnouncementListItem.js'
+import AnnouncementListItem from '../../libs/announcementListItem/announcementListItem.js'
 
 
 // @connect(({announcement}) => ({announcement}))
