@@ -3,9 +3,9 @@ import { connect } from 'dva';
 import { Menu, Dropdown, Button, Space } from 'antd';
 import { SearchOutlined } from '@ant-design/icons'
 import { PoweroffOutlined } from '@ant-design/icons'
-import styles from './userTestList.less';
+import styles from './UserTestListVerticle.less';
 
-const UserTestList =({text,colorStyle})=>{
+const UserTestListVerticle =({text,colorStyle})=>{
     return (
         <div className={styles.verticle} style={colorStyle}>
             {text}
@@ -14,4 +14,4 @@ const UserTestList =({text,colorStyle})=>{
     
 }
 
-export default UserTestList
+export default UserTestListVerticle
