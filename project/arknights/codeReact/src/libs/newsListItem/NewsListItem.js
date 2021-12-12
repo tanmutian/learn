@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'dva';
-import styles from './NewsListItem.less'
+import styles from './newsListItem.less'
 import notice from '../../image/notice.png'
 
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'dva';
-import styles from './RhodesIslandList.less'
+import styles from './rhodesIslandList.less'
 import notice from '../../image/notice.png'
 
 
