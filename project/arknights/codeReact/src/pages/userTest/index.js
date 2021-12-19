@@ -10,96 +10,34 @@ import styles from './index.less';
 // @connect(({ user }) => ({ user }))
 const User =()=>{
 
-    const [test,setTest]=useState({
-        name: 'Peter',
-        age: 16,
-        gender: 'male',
-        address: 'Shanghai'
-    });
-    const OnClick =()=>{
-        let newTest;
-        let newGender;
-        if(test.gender=='male'){
-            newGender='female';
-        }else{
-            newGender='male';
-        };
-        newTest={
-            name:test.name+'a',
-            age: test.age+2,
-            gender: newGender,
-            address: test.address+'b'
-        };
+    const [test,setTest]=useState([1,2,3,4,5,6]);
+    const onClickButton =()=>{
+        let newTest=[];
+        for(let i=0;i<test.length;i++){
+            newTest.push(test[i]+1);
+        }
         setTest(newTest);
+    }
+    const functionReturnObject =()=>{
+        let functionReturnObjectHtml=[];
+        for(let i=0;i<test.length;i++){
+            functionReturnObjectHtml.push(
+                <div className={styles.item}>
+                    {test[i]}
+                </div>
+            );
+        }
+        return functionReturnObjectHtml;
     }
     
     
 
     return (
         <div className={styles.global}>
-            <div className={styles.sectionArea}>
-                <UserTestList
-                    text = {test.name}
-                    colorStyle = {{
-                        background: 'blue',
-                        color: 'red'
-                    }}
-                />
-                <UserTestList
-                    text = {test.age}
-                    colorStyle = {{
-                        background: 'black',
-                        color: 'green'
-                    }}
-                />
-                <UserTestList
-                    text = {test.gender}
-                    colorStyle = {{
-                        background:'grey',
-                        color:  'black'
-                    }}
-                />
-                <UserTestList
-                    text = {test.address}
-                    colorStyle = {{
-                        background: 'yellow',
-                        color: 'purple'
-                    }}
-                />
+            <div>
+                {functionReturnObject()}
             </div>
-
-            <div className={styles.sectionArea2}>
-                <UserTestListVerticle
-                    text = {test.address}
-                    colorStyle = {{
-                        background: 'blue',
-                        color: 'green'
-                    }}
-                />
-                <UserTestListVerticle
-                    text = {test.address}
-                    colorStyle = {{
-                        background: 'red',
-                        color: 'orange'
-                    }}
-                />
-                <UserTestListVerticle
-                    text = {test.address}
-                    colorStyle = {{
-                        background: 'black',
-                        color: 'grey'
-                    }}
-                />
-                <UserTestListVerticle
-                    text = {test.address}
-                    colorStyle = {{
-                        background: 'yellow',
-                        color: 'red'
-                    }}
-                />
-            </div>
-
-            <div className={styles.button} onClick={OnClick}>
+            <div className={styles.button} onClick={onClickButton}>
                 CLICK ME !!!
             </div>
             
