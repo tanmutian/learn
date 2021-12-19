@@ -33,6 +33,7 @@ const User =()=>{
             {getFunctionReturnObject()}
             <div className={styles.button} onClick={onClickButton}> 
             </div>
+            在userTest中定义一个数字数组，里面包含6个数字，初始值为10，20，30，40，50，60。设置一个按钮，每次点击这个按钮，对数组中的每个数字减1。将数组中的值按照如图每次进行展示：
         </div>
 
     )
