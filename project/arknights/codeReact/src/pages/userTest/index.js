@@ -10,7 +10,24 @@ import styles from './index.less';
 // @connect(({ user }) => ({ user }))
 const User =()=>{
 
-    const [test,setTest]=useState(['a','b','c','d','e','f']);
+    const [test,setTest]=useState([{
+        name:'Royce',
+        age:19,
+        cource:'Psychology'
+    },{
+
+        name:'Keivn',
+        age:19,
+        cource:'management'
+    },{
+        name:'Steven',
+        age:19,
+        cource:'mechanical Engineering'
+    },{
+        name:'Sunny',
+        age:18,
+        cource:'Electronic and electrical engineering'
+    }]);
     const onClickButton =()=>{
         let newTest=[];
         for(let i=0;i<test.length;i++){
@@ -23,7 +40,17 @@ const User =()=>{
         for(let i=0;i<test.length;i++){
             functionReturnObjectHtml.push(
                 <div className={styles.item}>
-                    {test[i]}
+                    <div className={styles.name}>
+                        {test[i].name}
+                    </div>
+                    <div className={styles.large}>
+                        <div className={styles.age}>
+                            {test[i].age}
+                        </div>
+                        <div className={styles.cource}>
+                            {test[i].cource}
+                        </div>
+                    </div>
                 </div>
             );
         }
@@ -35,9 +62,6 @@ const User =()=>{
     return (
         <div className={styles.global}>
             {horizon()}
-            <div className={styles.button} onClick={onClickButton}>
-                CLICK ME !!!
-            </div>
         </div>
     
     )
