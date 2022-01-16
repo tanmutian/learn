@@ -11,6 +11,35 @@ import AnnouncementListItem from '../../libs/announcementListItem/announcementLi
 
 // @connect(({announcement}) => ({announcement}))
 const Announcement =()=>{
+
+	const[data,setData]=useState([{
+		topDate:"March 16, 2021",
+		bottomLeftImg:announcement2,
+		bottomRightText:"Flash update announcement on March 16"
+	},{
+		topDate:"March 09, 2021",
+		bottomLeftImg:announcement2,
+		bottomRightText:"Repair instructions for abnormal conditions on March 09"
+	},{
+		topDate:"March 09, 2021",
+		bottomLeftImg:announcement2,
+		bottomRightText:"Downtime maintenance for the new version"
+	},])
+
+	const arrange =()=>{
+		let arrangement=[];
+		for(let i=0;i<data.length;i++){
+			arrangement.push(
+				<AnnouncementListItem 
+					topDate={data[i].topDate} 
+					bottomLeftImg={data[i].bottomLeftImg} 
+					bottomRightText={data[i].bottomRightText}
+				/>
+			)
+		}
+		return arrangement;
+	}
+
 	return (
 		<div className={styles.global}>
 			<Navigation />
@@ -24,24 +53,7 @@ const Announcement =()=>{
 				</div>
 			</div>
 			
-			<AnnouncementListItem 
-				topDate={"March 16, 2021"} 
-				bottomLeftImg={announcement2} 
-				bottomRightText={"Flash update announcement on March 16"}
-			/>
-			
-
-			<AnnouncementListItem
-				topDate={"March 09, 2021"}
-				bottomLeftImg={announcement2}
-				bottomRightText={"Repair instructions for abnormal conditions on March 09"}
-			/>
-			
-			<AnnouncementListItem 
-				topDate={"March 09, 2021"}
-				bottomLeftImg={announcement2}
-				bottomRightText={"Downtime maintenance for the new version"}
-			/>
+			{arrange()}
 			
 			<Copyright />
 			
