@@ -58,56 +58,32 @@ const User =()=>{
     }
 
     const classRanking =()=>{
-        //let rankList=[]
-       // for(let i=0;i<test.length;i++){
-        //    for(let j=0;j<i;j++){
-         //       if(test[j].score<test[j+1].score){
-          //          let temp={};
-         //           temp=test[j];
-           //         test[j]=test[j+1];
-           //         test[j+1]=temp
-           //     }
-           // }
-       // }
         let classRank=[];
         for(let i=0;i<test.length;i++){
-            //if(test[i].class==1){
-                classRank.push(
-                    <div className={styles.theClass}>
-                        <div className={styles.name}>
-                            {test[i].name}
+            classRank.push(
+                <div className={styles.theClass}>
+                    <div className={styles.name}>
+                        {test[i].name}
+                    </div>
+                    <div classNmae={styles.content}>
+                        <div className={styles.rank}>
+                            {i+1}
                         </div>
-                        <div classNmae={styles.content}>
-                            <div className={styles.rank}>
-                                {i+1}
-                            </div>
-                            <div className={styles.score}>
-                                {test[i].score}
-                            </div>
-                            <div className={styles.clear}>
-                            </div>
+                        <div className={styles.score}>
+                            {test[i].score}
                         </div>
                         <div className={styles.clear}>
                         </div>
                     </div>
-                );
-            //}            
+                    <div className={styles.clear}>
+                     </div>
+                </div>
+            );      
         }
         return classRank;
     }
     
     const gradeRanking =()=>{
-       // let rankList=[]
-       // for(let i=0;i<grade.length;i++){
-         //   for(let j=0;j<=i;j++){
-         //       if(test[j].score<test[j+1].score){
-         //           let temp={};
-         //           temp=test[j];
-          //          test[j]=test[j+1];
-         //           test[j+1]=temp
-          //      }
-        //    }
-       // }
         let gradeRanking=[];
         for(let i=0;i<grade.length;i++){
             gradeRanking.push(
@@ -144,7 +120,7 @@ const User =()=>{
                 <div className={styles.gradeRank}>
                     {gradeRanking()}
                 </div>
-                
+
                 <div className={styles.clear}>
                 </div>
             </div>          
